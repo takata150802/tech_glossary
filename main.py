@@ -24,12 +24,15 @@ class Repository:
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
         else:
-            logger.warning("Directory {} is already exist.".format(output_dir))     
+            logger.warning("Directory {} is already exist.".format(output_dir))
+        [ f.generate_anchor() for f in self.md_files]
+        [ f.generate_output_md_file(output_dir) for f in self.md_files]
         return
 
 import re
 re_url = re.compile(r'<!--- 記事URL:(.*) --->')
 re_term = re.compile(r'#+ (.*) <!--- entry_word_and_anchor:(\w*) --->')
+re_gen_achor = re.compile(r'<!--- entry_word_and_anchor:(\w*) --->')
 class MarkDownFile:
     def __init__(self,path):
         self.path = path
@@ -43,7 +46,7 @@ class MarkDownFile:
             self.url = None
         else:
             self.url = ret[0]
-            logger.info(ret[0])
+            logger.debug(ret[0])
         # [NOTE]: TechTermのentry_wordとanchorを取得
         ret = re.findall(re_term, self.text)
         tech_terms = []
@@ -51,16 +54,26 @@ class MarkDownFile:
             entry_words = tech_term_and_anchor[0]
             anchor = tech_term_and_anchor[1]
             entry_words = [ i.strip() for i in entry_words.split('|')]
-            logger.info(anchor)
-            logger.info(entry_words)
+            logger.debug(anchor)
+            logger.debug(entry_words)
             t = TechTerm(anchor, entry_words)
             tech_terms.append(t)
         self.tech_terms = tech_terms
         return
+    def generate_anchor(self):
+        self.text = re.sub(re_gen_achor, 
+                           r'<!--- entry_word_and_anchor:\1 ---><a id="\1"></a>',
+                           self.text)
+        return
+    def generate_output_md_file(self, output_dir):
+        output_path = output_dir + '/' + self.path
+        with open(output_path, "w") as f:
+            f.write(self.text)
+        return
 
 class TechTerm:
     def __init__(self, anchor, entry_words):
-        self.ancher = anchor
+        self.anchor = anchor
         self.headwords = entry_words
         return
 
