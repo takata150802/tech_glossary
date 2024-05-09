@@ -36,9 +36,9 @@ class Repository:
         return
 
 import re
-re_url = re.compile(r'<!--- 記事URL:(.*) --->')
-re_term = re.compile(r'(#+) (.*) <!--- entry_word_and_anchor:(\w*) --->')
-re_gen_achor = re.compile(r'<!--- entry_word_and_anchor:(\w*) --->')
+re_url = re.compile(r'<!-- 記事URL:(.*) -->')
+re_term = re.compile(r'(#+) (.*) <!-- entry_word_and_anchor:(\w*) -->')
+re_gen_achor = re.compile(r'<!-- entry_word_and_anchor:(\w*) -->')
 class MarkDownFile:
     def __init__(self,path):
         self.path = path
@@ -69,7 +69,7 @@ class MarkDownFile:
     def generate_anchor(self):
         term_with_achor = r'<a id="\3"></a>\n'
         term_with_achor += r'\1 \2 '
-        term_with_achor += r'<!--- entry_word_and_anchor:\3 --->'
+        term_with_achor += r'<!-- entry_word_and_anchor:\3 -->'
         self.text = re.sub(re_term, 
                            term_with_achor,
                            self.text)
