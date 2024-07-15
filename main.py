@@ -97,7 +97,7 @@ class MarkDownFile:
         entry_word_with_link += r'"> ' + tech_term.entry_word
         entry_word_with_link += r' </a>'
 
-        pattern = r'^(?!#)(.*){0}(?!(?!.*<a).*<\/a>)(?!(?!.*<!--).*-->)'.format(entry_word)
+        pattern = r'^(?!#)(?!.*<!-- substituteinhibit -->.*$)(.*){0}(?!(?!.*<a).*<\/a>)(?!(?!.*<!--).*-->)'.format(entry_word)
         re_sub = re.compile(pattern)
         logger.debug(pattern)
         logger.debug(re.search(pattern, self.text, flags=re.MULTILINE))
