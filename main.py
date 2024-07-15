@@ -55,7 +55,7 @@ re_url = re.compile(r'<!-- 記事URL:(.*) -->')
 re_term = re.compile(r'(#+) (.*) <!-- entry_word_and_anchor:(\w*) -->')
 re_gen_achor = re.compile(r'<!-- entry_word_and_anchor:(\w*) -->')
 class MarkDownFile:
-    def __init__(self,path):
+    def __init__(self, path):
         self.path = path
         with open(path, 'r') as f:
             self.text = f.read()
@@ -93,7 +93,7 @@ class MarkDownFile:
         entry_word = tech_term.entry_word
         entry_word_with_link = r'\1'
         entry_word_with_link += r'<a href="' + tech_term.md_file.url
-        entry_word_with_link += r'#' + tech_term.anchor
+        entry_word_with_link += tech_term.anchor
         entry_word_with_link += r'"> ' + tech_term.entry_word
         entry_word_with_link += r' </a>'
 
