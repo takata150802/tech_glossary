@@ -1,6 +1,6 @@
 <!-- 記事URL:https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md# -->
 
-## 人工知能 | Artificial Intelligence | AI　<!-- entry_word_and_anchor:ML_ML_OVERVIEW_AI -->
+## 人工知能 | Artificial Intelligence | AI　
 - 人間の知的な行動を模倣するコンピュータシステム
 - 2010代~2024年現在まで続くAIブームは第3次AIブーム(3rd Wave)とされている。
   - First Wave (1950s-1970s):
@@ -43,40 +43,40 @@ Problem Solver）
         - ILSVRC2012の次点は東大知能機械 原田研究室の牛久祥孝氏。「ヒントンに敗れた男」として日本経済新聞の記事で紹介されるもお名前がtypo…
     - Google、Meta(旧Facebook)、Microsoft、Amazon等の北米IT大手が研究開発を牽引し、多くのプロダクト・サービスにAIが投入され商業的成功を収めている
 
-## 機械学習 | Machine Learning <!-- entry_word_and_anchor:ML_ML_OVERVIEW_ML -->
+## 機械学習 | Machine Learning 
 - データからパターンを学習し、予測や意思決定を行うアルゴリズムや手法のことです。
 
-## 教師あり学習 | Supervised Learning  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Supervised -->
+## 教師あり学習 | Supervised Learning  
 - 入力データとそれに対応する正解ラベルを用いてモデルを訓練する学習方法です。
 
-## 教師なし学習 | Unsupervised Learning  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Unsupervised -->
+## 教師なし学習 | Unsupervised Learning  
 - ラベルのないデータからパターンや構造を見つけ出す学習方法です。
 
-## 強化学習 | Reinforcement Learning  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Reinforcement -->
+## 強化学習 | Reinforcement Learning  
 - エージェントが環境との相互作用を通じて報酬を最大化する行動を学習する方法です。
 
-## 分類 | Classification  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Classification -->
+## 分類 | Classification  
 - データをあらかじめ定義されたカテゴリに分類する機械学習タスクです。
 
-## 回帰 | Regression  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Regression -->
+## 回帰 | Regression  
 - 連続値を予測する機械学習タスク
 
-## 重回帰 | Multiple Regression  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_MultipleRegression -->
+## 重回帰 | Multiple Regression  
 - 複数の独立変数を用いて従属変数を予測する回帰分析の一種
 
-## サポートベクターマシン | Support Vector Machine | SVM <!-- entry_word_and_anchor:ML_ML_OVERVIEW_SVM -->
+## サポートベクターマシン | Support Vector Machine | SVM 
 - データポイントを分離する最適なハイパープレーンを見つける分類アルゴリズムです。
 
-## クラスタリング | Clustering  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Clustering -->
+## クラスタリング | Clustering  
 - データを類似したグループ（クラスタ）に分ける教師なし学習の手法です。
 
-## 主成分分析 | Principal Component Analysis | PCA <!-- entry_word_and_anchor:ML_ML_OVERVIEW_PCA -->
+## 主成分分析 | Principal Component Analysis | PCA 
 - 高次元データを低次元に変換する次元削減の手法です。
 
-## 次元削減 | Dimensionality Reduction  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_DimReduction -->
+## 次元削減 | Dimensionality Reduction  
 - 高次元データをより少ない次元に圧縮して、情報の損失を最小限に抑える手法です。
 
-## 最小2乗法 | Least Square Method  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_LeastSquareMethod -->
+## 最小2乗法 | Least Square Method  
 - 目的変数Yを説明変数Xの線形モデルで表したときの２乗誤差(=\epsilon^2)を最小にするパラメータ\thetaを求める手法
 - 線形モデルの誤差\epsilonを多変量正規分布と仮定したときの最尤法に相当する
 
@@ -113,12 +113,12 @@ X^TX\theta = X^TY \\
 ```
 
 
-## 最尤法 | Maximum Likelihood Method | MLE <!-- entry_word_and_anchor:ML_ML_OVERVIEW_MaximumLikelihoodMethod -->
+## 最尤法 | Maximum Likelihood Method | MLE 
 - 訓練サンプル集合が生じる確率(=尤度)を最大にするパラメータ値を，パラメータの推定量とする方法
 - (あとで書く) 最尤法は分布との距離をKLダイバージェンスで測ったときの真の分布に最も近いモデルを推定している https://ibisforest.org/index.php?%E6%9C%80%E5%B0%A4%E6%8E%A8%E5%AE%9A
 - (あとで書く) 線形回帰における誤差項が正規分布にしたがうことを仮定してパラメータを推定すると、最尤法と最小二乗法は同一の推定量を与えます。 https://qiita.com/nakey_tdse/items/05a0f1458089818b349d
 
-## 尤度 | Likelihood <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Likelihood -->
+## 尤度 | Likelihood 
 - 訓練サンプルX= {x_1,...,x_n}が与えられたとき、パラメータ 𝜃の下でのデータの発生確率
 
 ```math
@@ -126,43 +126,43 @@ X^TX\theta = X^TY \\
 訓練サンプルの確立モデル: f(x_i;\theta)
 ```
 
-## 正規化 | Normalization <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Normalization -->
+## 正規化 | Normalization 
 - データの[最小値, 最大値]が[0, 1] や[-1, 1]あるいは[0,255] となるように変換するといった、後続の計算処理に都合が良いようにデータをスケーリングすること
 
-## 標準化 | Standardization <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Standardization -->
+## 標準化 | Standardization 
 - データの平均が0, 分散が1となるように変換すること
 
-## コンピュータビジョン | Computer Vision | CV <!-- entry_word_and_anchor:ML_ML_OVERVIEW_CV -->
+## コンピュータビジョン | Computer Vision | CV 
 - 画像や動画から有用な情報を抽出する技術分野です。
 
-## セグメンテーション | Segmentation  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_Segmentatoin -->
+## セグメンテーション | Segmentation  
 - 画像をピクセル単位でカテゴリに分けるプロセスです。
 
 ## 特徴量 
 - 生データの性質や意味を良く表現し、後続の計算処理に利用しやすい形式に変換されたデータ。
 
-## 物体検出 | Object Detection  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_ObjectDetection -->
+## 物体検出 | Object Detection  
 - 画像内の複数の物体を検出し、その位置とカテゴリを特定する技術です。
 
-## 自然言語処理 | Natural Language Processing | NLP <!-- entry_word_and_anchor:ML_ML_OVERVIEW_NLP -->
+## 自然言語処理 | Natural Language Processing | NLP 
 - 人間の言語を理解し、生成するコンピュータの能力を研究する分野です。
 
-## 音声認識 | Speech Recognition  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_SpeechRecognition -->
+## 音声認識 | Speech Recognition  
 - 音声信号をテキストに変換する技術です。
 
-## k-means  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_kmeans -->
+## k-means  
 - データをk個のクラスタに分けるクラスタリングアルゴリズムです。
 
-## カーネルトリック | Kernel Trick  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_KernelTrick -->
+## カーネルトリック | Kernel Trick  
 - 非線形データを線形に分離可能な高次元空間に変換する手法です。
 
-## ランダムフォレスト | Random Forest  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_RandomForest -->
+## ランダムフォレスト | Random Forest  
 - 複数の決定木を組み合わせて予測を行うアンサンブル学習アルゴリズムです。
 
-## 自己組織化マップ | Self-Organizing Map | SOM <!-- entry_word_and_anchor:ML_ML_OVERVIEW_SOM -->
+## 自己組織化マップ | Self-Organizing Map | SOM 
 - 高次元データを低次元空間にマッピングする教師なし学習のニューラルネットワークです。
 
-## 汎化誤差 | Generalization Error <!-- entry_word_and_anchor:ML_ML_OVERVIEW_GError -->
+## 汎化誤差 | Generalization Error 
 
 - 訓練データに無いサンプルに対する誤差
 - 以下3つから構成されるものと考える
@@ -170,7 +170,7 @@ X^TX\theta = X^TY \\
   - バリアンス誤差
   - ノイズ ・・・モデル集合の選択に依存せず，本質的に減らせない真のモデルのばらつき
 
-## 標本誤差 | Sample Error  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_SError -->
+## 標本誤差 | Sample Error  
 
 - 訓練データのサンプルに対する誤差
 - 「経験誤差 | empirical error」や「経験損失 | empirical risk」ともいう
@@ -179,10 +179,10 @@ X^TX\theta = X^TY \\
 損失関数: L(x,\theta) \\
 データ: D={x_1,...,x_N} 
 ```
-## バイアス誤差 | Bias Error  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_BiasError -->
+## バイアス誤差 | Bias Error  
 - 候補モデル集合に真のモデルは含まれないことで生じる誤差
 
-## バリアンス誤差 | Variance Error <!-- entry_word_and_anchor:ML_ML_OVERVIEW_VarianceError -->
+## バリアンス誤差 | Variance Error 
 - 訓練データが異なると，異なる予測モデルが選択されることで生じる誤差
 
 # 参考文献

@@ -2,5 +2,5 @@
 <!-- 記事URL:https://github.com/takata150802/tech_glossary/blob/main/output/cs-arch-perf.md# -->
 
 <!-- 
-## アーキテクチャシミュレータ | Architecture Simulator <!-- entry_word_and_anchor:CS_ARCH_PERL_ -->
+## アーキテクチャシミュレータ | Architecture Simulator 
 -->
