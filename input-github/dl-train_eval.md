@@ -16,7 +16,7 @@
 - モデルの予測と実際の値との間の誤差を計算する関数であり、モデルのパフォーマンスを評価し、最適化するために使用されます。
 
 
-## word2vec | word2vec <!-- entry_word_and_anchor:ML_DL_TRAIN_EVAL_word2vec-->
+## word2vec <!-- entry_word_and_anchor:ML_DL_TRAIN_EVAL_word2vec-->
 - 単語をベクトル形式で表現する技術であり、自然言語処理において単語間の意味的な類似性を捉えるために使用されます。
 
 ## ハイパーパラメータ | Hyperparameter <!-- entry_word_and_anchor:ML_DL_TRAIN_EVAL_Hyperparam -->
@@ -122,7 +122,7 @@
 ## Jaccard係数 | Jaccard Index <!-- entry_word_and_anchor:ML_DL_TRAIN_EVAL_JaccardIndex -->
 - 二つの集合の交差部分のサイズを和集合のサイズで割ったものであり、類似度を測定する指標です。
 
-## t-SNE | t-Distributed Stochastic Neighbor Embedding | t-SNE <!-- entry_word_and_anchor:ML_DL_TRAIN_EVAL_tSNE -->
+## t-SNE | t-Distributed Stochastic Neighbor Embedding <!-- entry_word_and_anchor:ML_DL_TRAIN_EVAL_tSNE -->
 - 高次元データを低次元空間に可視化するための次元削減手法です。
 
 ## オッズ比 | Odds Ratio <!-- entry_word_and_anchor:ML_DL_TRAIN_EVAL_Odds -->

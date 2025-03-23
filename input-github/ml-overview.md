@@ -150,7 +150,7 @@ X^TX\theta = X^TY \\
 ## 音声認識 | Speech Recognition  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_SpeechRecognition -->
 - 音声信号をテキストに変換する技術です。
 
-## k-means | k-means  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_kmeans -->
+## k-means  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_kmeans -->
 - データをk個のクラスタに分けるクラスタリングアルゴリズムです。
 
 ## カーネルトリック | Kernel Trick  <!-- entry_word_and_anchor:ML_ML_OVERVIEW_KernelTrick -->

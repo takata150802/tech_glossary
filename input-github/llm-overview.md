@@ -11,4 +11,4 @@
 
 ## Hugging Face <!-- entry_word_and_anchor:ML_LLM_HuggingFace -->
 
-## RAG | Retrieval Augmented Generation | RAG <!-- entry_word_and_anchor:ML_LLM_RAG -->
+## RAG | Retrieval Augmented Generation <!-- entry_word_and_anchor:ML_LLM_RAG -->
