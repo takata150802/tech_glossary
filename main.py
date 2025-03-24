@@ -82,12 +82,13 @@ class MarkDownFile:
                         assert entry_word not in [t.entry_word for t in tech_terms], entry_word
                         tech_terms.append(TechTerm(anchor, entry_word, self))
 
-        tech_terms.sort(key=lambda t: len(t.entry_word), reverse=True)
+        tech_terms = sorted(tech_terms, key=lambda t: len(t.entry_word), reverse=True)
         return tech_terms, node.to_tokens(), SyntaxTreeNode(node.to_tokens())
 
     def insert_links(self):
-        self.repo.md_files.sort(key=lambda x: commonpath_length(self.relpath, x.relpath), reverse=True)
-        all_terms = [t for f in self.repo.md_files for t in f.tech_terms]
+        ### BUGFIX: The self.repo.md_files.sort() broke the content, MarkDownFile(ai/llm.md) was overwritten by MarkDownFile(llm-overview.md)
+        md_files = sorted(self.repo.md_files, key=lambda x: commonpath_length(self.relpath, x.relpath), reverse=True)
+        all_terms = [t for f in md_files for t in f.tech_terms]
 
         def my_node_walk(self):
             if self.type in ("heading", "link", "html_inline", "html_block", "code_inline"):
