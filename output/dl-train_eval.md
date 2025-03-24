@@ -72,7 +72,7 @@
 
 ## 誤差逆伝播法 | バックプロパゲーション | Backpropagation<a id="6Kqk5beu6YCG5Lyd5pKt5rOVIHwg44OQ44OD44Kv44OX44Ot44OR44Ky44O844K344On44OzIHwgQmFja3Byb3BhZ2F0aW9u"></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>のトレーニングアルゴリズムであり、誤差を出力層から入力層に逆伝播させて、各層の重みを更新します。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>のトレーニングアルゴリズムであり、誤差を出力層から入力層に逆伝播させて、各層の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重み</a>を更新します。
 
 ## 学習率 | Learning Rate<a id="5a2m57+S546HIHwgTGVhcm5pbmcgUmF0ZQ=="></a>
 

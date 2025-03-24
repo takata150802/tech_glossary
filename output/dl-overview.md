@@ -64,7 +64,7 @@
 
 ## プロンプトエンジニアリング | Prompt Engineering<a id="44OX44Ot44Oz44OX44OI44Ko44Oz44K444OL44Ki44Oq44Oz44KwIHwgUHJvbXB0IEVuZ2luZWVyaW5n"></a>
 
-- 生成モデルに対する入力（プロンプト）を最適化して望ましい出力を得る技術です。
+- 生成モデルに対する入力（<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OX44Ot44Oz44OX44OIIHwgUHJvbXB0">プロンプト</a>）を最適化して望ましい出力を得る技術です。
 
 ## EMアルゴリズム | Expectation-Maximization Algorithm | EM Algorithm<a id="RU3jgqLjg6vjgrTjg6rjgrrjg6AgfCBFeHBlY3RhdGlvbi1NYXhpbWl6YXRpb24gQWxnb3JpdGhtIHwgRU0gQWxnb3JpdGht"></a>
 

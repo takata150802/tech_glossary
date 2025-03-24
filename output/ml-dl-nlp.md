@@ -26,5 +26,5 @@
 
 ## Embedding<a id="RW1iZWRkaW5n"></a>
 
-- トークン(<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#44OI44O844Kv44Oz5YyWIHwgVG9rZW5pemF0aW9u">トークン化</a>参照)を実数のベクトルに変換すること。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>(<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#44OI44O844Kv44Oz5YyWIHwgVG9rZW5pemF0aW9u">トークン化</a>参照)を実数のベクトルに変換すること。
 - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#44OI44O844Kv44Oz5YyWIHwgVG9rZW5pemF0aW9u">トークン化</a>と同様、文章を数理モデルで扱える形式に変換するために行う。

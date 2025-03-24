@@ -21,14 +21,14 @@
       - 第1回<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">人工知能</a>国際会議 IJC<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> 1969 @ワシントン
     - この後最初の「<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> の冬」時代へ
   - Second Wave (1980s-1990s):
-    - 人間の専門家の知識を持った <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> が専門家のような推論を行うエキスパートシステム（Expert System）
+    - 人間の専門家の知識を持った <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> が専門家のような<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を行うエキスパートシステム（Expert System）
       - 人間の専門家の知識を引き出すタスクは知識エンジニアリングと呼ばれ，知識エンジニアという職業まで生まれた
     - 病気の診断を行う MYCIN（マイシン）
     - 油田の推定を行うディップメーターアドバイザー
     - コンピュータの構成を行う XCON（エックスコン）
     - 日本 通産省: 第五世代コンピュータプロジェクト,1982年~
       - 引用元: https://museum.ipsj.or.jp/computer/other/0002.html
-        - `通産省は1982年に第五世代コンピュータプロジェクトをスタートさせた．このプロジェクトは，国際貢献を果たしつつ技術先進国として発展するという我が国の政策のもとに始められたもので，国際的にみても創造的・先駆的な技術という意味を込めて「第五世代コンピュータ」と名付けられた．技術目標を「知識情報処理を指向した新しいコンピュータ技術の研究開発」と定め，推進母体として新世代コンピュータ技術開発機構（ICOT）が設立され，技術目標に含まれる多くの要素技術の実証・評価を行うために，並列推論型コンピュータのプロトタイプシステムの試作が行われた．このシステムは，知識情報処理指向のコンピュ−タとしては，世界最高速，かつ，最大規模のものであった．このシステムは，並列推論マシン（PIM）と呼ばれる大規模な並列ハードウェアシステムを持ち，PIM は512台の要素プロセッサからなるPIM/pや256台の要素プロセッサを持つPIM/mなど5つのモデルが作られた．11年間で約540億を投じ1992年度をもって終了した．現在，PIM/pおよびPIM/mは国立科学博物館で保存されている．また，下記のWebで「第五世代博物館」が公開されている．` <!-- substituteinhibit -->
+        - 通産省は1982年に第五世代コンピュータプロジェクトをスタートさせた．このプロジェクトは，国際貢献を果たしつつ技術先進国として発展するという我が国の政策のもとに始められたもので，国際的にみても創造的・先駆的な技術という意味を込めて「第五世代コンピュータ」と名付けられた．技術目標を「知識情報処理を指向した新しいコンピュータ技術の研究開発」と定め，推進母体として新世代コンピュータ技術開発機構（ICOT）が設立され，技術目標に含まれる多くの要素技術の実証・評価を行うために，並列<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>型コンピュータのプロトタイプシステムの試作が行われた．このシステムは，知識情報処理指向のコンピュ−タとしては，世界最高速，かつ，最大規模のものであった．このシステムは，並列<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>マシン（PIM）と呼ばれる大規模な並列ハードウェアシステムを持ち，PIM は512台の要素プロセッサからなるPIM/pや256台の要素プロセッサを持つPIM/mなど5つのモデルが作られた．11年間で約540億を投じ1992年度をもって終了した．現在，PIM/pおよびPIM/mは国立科学博物館で保存されている．また，下記のWebで「第五世代博物館」が公開されている． <!-- substituteinhibit -->
     - 暗黙知の顕在化によるエキスパートシステムの限界などにより，15 年に及ぶ <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> 冬の時代へ。この間における主要な進歩は下記の通り：
       - ベイジアンネットワーク | Bayesian Network
       - 遺伝的アルゴリズム | Genetic Algorithm

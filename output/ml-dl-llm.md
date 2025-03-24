@@ -18,15 +18,15 @@
 
 ## GPT-3 | Generative Pre-trained Transformer 3<a id="R1BULTMgfCBHZW5lcmF0aXZlIFByZS10cmFpbmVkIFRyYW5zZm9ybWVyIDM="></a>
 
-- Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a>によって開発された、数千億のパラメータを持つ言語モデル。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a>によって開発された、数千億のパラメータを持つ言語モデル。
 
 ## GPT-2 | Generative Pre-trained Transformer 2<a id="R1BULTIgfCBHZW5lcmF0aXZlIFByZS10cmFpbmVkIFRyYW5zZm9ybWVyIDI="></a>
 
-- Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a>が開発した、数億のパラメータを持つ言語モデルの前身。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a>が開発した、数億のパラメータを持つ言語モデルの前身。
 
 ## BERT | Bidirectional Encoder Representations from Transformers<a id="QkVSVCB8IEJpZGlyZWN0aW9uYWwgRW5jb2RlciBSZXByZXNlbnRhdGlvbnMgZnJvbSBUcmFuc2Zvcm1lcnM="></a>
 
-- Googleが提案した、大規模な事前学習済み言語モデル。
+- Googleが提案した、大規模な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJldHJhaW5pbmc=">事前学習</a>済み言語モデル。
 
 ## T5 | Text-To-Text Transfer Transformer<a id="VDUgfCBUZXh0LVRvLVRleHQgVHJhbnNmZXIgVHJhbnNmb3JtZXI="></a>
 
