@@ -10,11 +10,11 @@
 
 ## PEFT | Parameter-Efficient Fine-Tuning<a id="UEVGVCB8IFBhcmFtZXRlci1FZmZpY2llbnQgRmluZS1UdW5pbmc="></a>
 
-- 全パラメータではなく一部のみ更新することで、少数のリソースで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmcgfCBGaW5lIHR1bmluZw==">ファインチューニング</a>を可能にする技術群。
+- 全パラメータではなく一部のみ更新することで、少数のリソースで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">ファインチューニング</a>を可能にする技術群。
 
 ## Instruction Tuning<a id="SW5zdHJ1Y3Rpb24gVHVuaW5n"></a>
 
-- モデルにタスク指示文（instruction）を含むデータで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmcgfCBGaW5lIHR1bmluZw==">ファインチューニング</a>し、指示に従った応答生成能力を向上させる手法。例：FLAN, <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#VDUgfCBUZXh0LVRvLVRleHQgVHJhbnNmZXIgVHJhbnNmb3JtZXI=">T5</a>。
+- モデルにタスク指示文（instruction）を含むデータで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">ファインチューニング</a>し、指示に従った応答生成能力を向上させる手法。例：FLAN, <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#VDUgfCBUZXh0LVRvLVRleHQgVHJhbnNmZXIgVHJhbnNmb3JtZXI=">T5</a>。
 
 ## RLHF | Reinforcement Learning from Human Feedback<a id="UkxIRiB8IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJvbSBIdW1hbiBGZWVkYmFjaw=="></a>
 
@@ -31,7 +31,7 @@
 ## Adapter Layers<a id="QWRhcHRlciBMYXllcnM="></a>
 
 - モデルの特定の層に小さな追加モジュールを挿入し、微調整時に更新するパラメータを限定する技術。
-- 用途: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UEVGVCB8IFBhcmFtZXRlci1FZmZpY2llbnQgRmluZS1UdW5pbmc=">PEFT</a>の一種として、効率的な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmcgfCBGaW5lIHR1bmluZw==">ファインチューニング</a>に使用。
+- 用途: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UEVGVCB8IFBhcmFtZXRlci1FZmZpY2llbnQgRmluZS1UdW5pbmc=">PEFT</a>の一種として、効率的な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">ファインチューニング</a>に使用。
 
 ## Prefix Tuning<a id="UHJlZml4IFR1bmluZw=="></a>
 

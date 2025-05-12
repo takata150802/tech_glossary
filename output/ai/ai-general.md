@@ -138,3 +138,19 @@
 ## ランダムフォレスト | Random Forest<a id="44Op44Oz44OA44Og44OV44Kp44Os44K544OIIHwgUmFuZG9tIEZvcmVzdA=="></a>
 
 - 多数の定木をバギングにより構築し、多数決で出力を得るアンサンブル学習法。
+
+## バイアス | Bias<a id="44OQ44Kk44Ki44K5IHwgQmlhcw=="></a>
+
+- モデルの予測値の平均と真の値との差。
+- 複雑なモデルを使用すると<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44OQ44Kk44Ki44K5IHwgQmlhcw==">バイアス</a>は低下するが、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44OQ44Oq44Ki44Oz44K5IHwgVmFyaWFuY2U=">バリアンス</a>が増加する傾向がある。
+
+## バリアンス | Variance<a id="44OQ44Oq44Ki44Oz44K5IHwgVmFyaWFuY2U="></a>
+
+- モデルの予測値の分散。
+- 学習データセットの変動に対するモデルの感度を示す。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44OQ44Oq44Ki44Oz44K5IHwgVmFyaWFuY2U=">バリアンス</a>が高い場合、単一の学習データセットに<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>している可能性がある。
+
+## 削減不能な誤差 | Irreducible Error<a id="5YmK5rib5LiN6IO944Gq6Kqk5beuIHwgSXJyZWR1Y2libGUgRXJyb3I="></a>
+
+- データの測定誤差などに由来するノイズの分散。
+- 削減できない。
