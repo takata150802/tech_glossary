@@ -11,3 +11,7 @@
 ## アライメント | Alignment<a id="44Ki44Op44Kk44Oh44Oz44OIIHwgQWxpZ25tZW50"></a>
 
 - モデル出力が人間の意図や社会的規範と整合するよう調整・訓練する取り組み全般。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UkxIRiB8IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJvbSBIdW1hbiBGZWVkYmFjaw==">RLHF</a>や安全性評価が含まれる。
+
+## ガードレール | Guardrails<a id="44Ks44O844OJ44Os44O844OrIHwgR3VhcmRyYWlscw=="></a>
+
+- モデル出力のセーフティやポリシー制御を目的としたルールやフィルタ。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-ethics-safety.md#44OP44Or44K344ON44O844K344On44OzIHwgSGFsbHVjaW5hdGlvbg==">ハルシネーション</a>回避、有害発言の抑制、特定タスク制限などの用途に活用される。

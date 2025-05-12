@@ -16,7 +16,7 @@
 - 高スループットかつメモリ効率の良い<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#TExN5o6o6KuW44K144O844OQ44O8IHwgTExNIEluZmVyZW5jZSBTZXJ2ZXI=">LLM推論サーバー</a>。
   - Paged<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwgQXR0ZW50aW9u">Attention</a>
   - In-flight batching
-  - Speculative Decoding
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#U3BlY3VsYXRpdmUgRGVjb2RpbmcgfCDmipXmqZ/nmoTjg4fjgrPjg7zjg4fjgqPjg7PjgrA=">Speculative Decoding</a>
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#Rmxhc2hBdHRlbnRpb24=">FlashAttention</a>
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a>互換API
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#TG9SQSB8IExvdy1SYW5rIEFkYXB0YXRpb24=">LoRA</a>対応
@@ -56,8 +56,8 @@
 - NVIDIAが提供するTensorRTの上に構築された<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a><a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>エンジン。
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#5YG96Zm95oCnIHwgRmFsc2UgUG9zaXRpdmUgfCBGUA==">FP</a>8、INT4、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-optimization.md#SU5UOA==">INT8</a>などの低精度<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>
   - In-flight batching
-  - Speculative Decoding（Medusa、EAGLE、ReDrafter）
-  - Paged KV Cache
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#U3BlY3VsYXRpdmUgRGVjb2RpbmcgfCDmipXmqZ/nmoTjg4fjgrPjg7zjg4fjgqPjg7PjgrA=">Speculative Decoding</a>（Medusa、EAGLE、ReDrafter）
+  - Paged <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#S1bjgq3jg6Pjg4Pjgrfjg6UgfCBLViBDYWNoZQ==">KV Cache</a>
   - TensorRTと統合して高性能な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を実現
 
 ## llama.cpp<a id="bGxhbWEuY3Bw"></a>
@@ -80,3 +80,15 @@
   - モデルの自動ダウンロードと管理
   - DockerベースでLlama 2、Mistral、Code Llamaなどのモデルをサポート
   - GPU/CPU対応
+
+## KVキャッシュ | KV Cache<a id="S1bjgq3jg6Pjg4Pjgrfjg6UgfCBLViBDYWNoZQ=="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>中に過去のキーとバリュー（Key/Value）を保存しておき、次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>予測時に再利用することで、再計算を避けて<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>速度を大幅に向上させる技術。
+
+## Speculative Decoding | 投機的デコーディング<a id="U3BlY3VsYXRpdmUgRGVjb2RpbmcgfCDmipXmqZ/nmoTjg4fjgrPjg7zjg4fjgqPjg7PjgrA="></a>
+
+- 小さく高速な言語モデルで仮予測を生成し、それを大きなモデルで検証・補完することで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を高速化する仕組み。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a>のMedusaやMetaのEAGLEなどが代表例。
+
+## In-Flight Batching<a id="SW4tRmxpZ2h0IEJhdGNoaW5n"></a>
+
+- 同時到着でなく逐次到着するユーザーリクエストを即座にバッチ化し、高スループットな<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を実現する仕組み。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#TExN5o6o6KuW44K144O844OQ44O8IHwgTExNIEluZmVyZW5jZSBTZXJ2ZXI=">LLM推論サーバー</a>の効率化に重要。

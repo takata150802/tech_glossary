@@ -27,3 +27,16 @@
 ## Self-Instruct<a id="U2VsZi1JbnN0cnVjdA=="></a>
 
 - 既存の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>を用いて、自動的に命令データと模範応答を生成し、instruction tuning用のデータを自己生成する手法。
+
+## Adapter Layers<a id="QWRhcHRlciBMYXllcnM="></a>
+
+- モデルの特定の層に小さな追加モジュールを挿入し、微調整時に更新するパラメータを限定する技術。
+- 用途: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UEVGVCB8IFBhcmFtZXRlci1FZmZpY2llbnQgRmluZS1UdW5pbmc=">PEFT</a>の一種として、効率的な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmcgfCBGaW5lIHR1bmluZw==">ファインチューニング</a>に使用。
+
+## Prefix Tuning<a id="UHJlZml4IFR1bmluZw=="></a>
+
+- モデルの入力に特定の「プレフィックス」を追加し、その部分のみを学習することでモデルを微調整する手法。
+
+## Gradient Checkpointing<a id="R3JhZGllbnQgQ2hlY2twb2ludGluZw=="></a>
+
+- 大規模な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の学習処理でのメモリ使用量を削減するために、中間勾配を再計算する技術。
