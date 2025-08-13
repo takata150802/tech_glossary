@@ -154,3 +154,31 @@
 
 - データの測定誤差などに由来するノイズの分散。
 - 削減できない。
+
+## 条件付き確率 | Conditional Probability<a id="5p2h5Lu25LuY44GN56K6546HIHwgQ29uZGl0aW9uYWwgUHJvYmFiaWxpdHk="></a>
+
+- ある事象が起こったときの別の事象の確率。
+
+```math
+  Bが起こったときのAの条件付き確率: P(A|B) = \frac{P(A \cap B)}{P(B)}
+```
+
+```math
+  なお、事象AとBが独立ならP(A \cap B) = P(A)P(B)、つまりP(A|B) = P(A)という簡単な話になる。そして、独立でない場合を考えたいとき、P(A \cap B) = P(A|B)P(B)を満たすP(A|B)なる確率が必要になり、このP(A|B)を条件付き確率と呼んでいるという話。
+```
+
+## 同時確率| Joint probability<a id="5ZCM5pmC56K6546HfCBKb2ludCBwcm9iYWJpbGl0eQ=="></a>
+
+- 複数の事象が同時に起きる確率
+
+```math
+事象AとBの同時確率: P(A \cap B)
+```
+
+## 条件付き確率の連鎖律 | Chain rule<a id="5p2h5Lu25LuY44GN56K6546H44Gu6YCj6Y6W5b6LIHwgQ2hhaW4gcnVsZQ=="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5ZCM5pmC56K6546HfCBKb2ludCBwcm9iYWJpbGl0eQ==">同時確率</a>は、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5p2h5Lu25LuY44GN56K6546HIHwgQ29uZGl0aW9uYWwgUHJvYmFiaWxpdHk=">条件付き確率</a>の積で表現できる。
+
+```math
+  事象AとBとCの同時確率: P(A \cap B \cap C) = P(A|B \cap C)P(B \cap C) = P(A|B \cap C)P(B|C)P(C)
+```
