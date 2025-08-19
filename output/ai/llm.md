@@ -2,7 +2,7 @@
 
 ## 大規模言語モデル| Large Language Model | LLM<a id="5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ=="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#VHJhbnNmb3JtZXI=">Transformer</a>ベースのアーキテクチャを用いて、大規模なコーパスを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Ieq5bex5pWZ5bir44GC44KK5a2m57+SIHwgU2VsZi1zdXBlcnZpc2VkIExlYXJuaW5n">自己教師あり学習</a>により<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJldHJhaW5pbmc=">事前学習</a>した自然言語生成モデル。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#VHJhbnNmb3JtZXI=">Transformer</a>ベースのアーキテクチャを用いて、大規模なコーパスを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Ieq5bex5pWZ5bir44GC44KK5a2m57+SIHwgU2VsZi1zdXBlcnZpc2VkIExlYXJuaW5n">自己教師あり学習</a>により<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>した自然言語生成モデル。
 
 ## 推論 | Inference<a id="5o6o6KuWIHwgSW5mZXJlbmNl"></a>
 

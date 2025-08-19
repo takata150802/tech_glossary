@@ -26,7 +26,7 @@
 
 ## BERT | Bidirectional Encoder Representations from Transformers<a id="QkVSVCB8IEJpZGlyZWN0aW9uYWwgRW5jb2RlciBSZXByZXNlbnRhdGlvbnMgZnJvbSBUcmFuc2Zvcm1lcnM="></a>
 
-- Googleが提案した、大規模な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJldHJhaW5pbmc=">事前学習</a>済み言語モデル。
+- Googleが提案した、大規模な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>済み言語モデル。
 
 ## T5 | Text-To-Text Transfer Transformer<a id="VDUgfCBUZXh0LVRvLVRleHQgVHJhbnNmZXIgVHJhbnNmb3JtZXI="></a>
 

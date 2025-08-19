@@ -77,7 +77,7 @@
 
 ## KL Divergence<a id="S0wgRGl2ZXJnZW5jZQ=="></a>
 
-- ある確率分布が別の分布かられだけ異なるかを測る非対称な距離指標。言語モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJldHJhaW5pbmc=">事前学習</a>にも使用。
+- ある確率分布が別の分布かられだけ異なるかを測る非対称な距離指標。言語モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>にも使用。
 
 ## オッズ比 | Odds Ratio<a id="44Kq44OD44K65q+UIHwgT2RkcyBSYXRpbw=="></a>
 

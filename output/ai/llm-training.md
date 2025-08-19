@@ -1,8 +1,57 @@
 <!-- 記事URL:https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md# -->
 
-## 事前学習 | Pretraining<a id="5LqL5YmN5a2m57+SIHwgUHJldHJhaW5pbmc="></a>
+## 事前学習 | Pre-training<a id="5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n"></a>
 
-- 巨大な未ラベルデータセットを用いて、マスク言語モデルや<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#6Ieq5bex5Zue5biwIHwgQXV0b3JlZ3Jlc3NpdmU=">自己回帰</a>モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5pCN5aSx6Zai5pWwIHwgTG9zcyBGdW5jdGlvbg==">損失関数</a>で学習を行う工程。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のモデル開発を大きく3つのステップに分けたときの最初のステップ。
+  - **ステップ1. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a> ★**
+  - ステップ2. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">指示学習</a>
+  - ステップ3. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#44Ki44Op44Kk44Oz44Oh44Oz44OIIHwgQWxpZ25tZW50">アラインメント</a>
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5pWZ5bir44Gq44GX5a2m57+SIHwgVW5zdXBlcnZpc2VkIExlYXJuaW5n">教師なし学習</a>。データセットは、Web上から収集した膨大なテキストデータを学習し知識を獲得するステップ。
+- 具体的には、以下二つのような予測タスクを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>に学習させる。人手でラベル付けする(=望ましい<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の出力を作成する)必要がない。したがって、膨大なテキストデータを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>に学習させることを実現し、大きなブレイクスルーとなった。
+  - Next-token prediction: 次の単語の予測
+  - Masked language modeling: ランダムにマスクされた単語の予測
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>したモデルは、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5Z+655uk44Oi44OH44OrIHwgRm91bmRhdGlvbiBNb2RlbA==">基盤モデル</a>と呼ばれる。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>を実施するのにあたり、計算資源、データセット、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のパラメータ数の規模をどの程度にするか？が重要であり、その指標としてScaling lawsがある。
+- 数千枚以上のGPUを使用する分散学習を行う。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>をどのように数千枚のGPUに分散するか？は重要な研究開発領域となっている。
+
+## 指示学習 | Instruction tuning<a id="5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n"></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のモデル開発を大きく3つのステップに分けたときの2番目のステップ。
+  - ステップ1. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>
+  - **ステップ2. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">指示学習</a> ★**
+  - ステップ3. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#44Ki44Op44Kk44Oz44Oh44Oz44OIIHwgQWxpZ25tZW50">アラインメント</a>
+- 一般的に、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5pWZ5bir44GC44KK5a2m57+SIHwgU3VwZXJ2aXNlZCBMZWFybmluZw==">教師あり学習</a>の一種である<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#U0ZUIHwgU3VwZXJ2aXNlZCBGaW5lLXR1bmluZw==">SFT</a>と呼ばれる手法を用いて、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5Z+655uk44Oi44OH44OrIHwgRm91bmRhdGlvbiBNb2RlbA==">基盤モデル</a>をQ&A、翻訳、要約、センチメント分析、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>などのタスク向けに<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">Fine-tuning</a>するステップ。
+- 下記の論文が初めて"<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">Instruction tuning</a>"という用語を提唱した。
+  - <a href="https://arxiv.org/abs/2109.01652"> Wei, Jason, et al. "Finetuned language models are zero-shot learners." arXiv preprint arXiv:2109.01652 (2021). </a>
+  - 従来は、各タスク毎に別々にモデルを開発していた。あるいは、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#QkVSVCB8IEJpZGlyZWN0aW9uYWwgRW5jb2RlciBSZXByZXNlbnRhdGlvbnMgZnJvbSBUcmFuc2Zvcm1lcnM=">BERT</a>などのある共通のモデルを各タスク向けに<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">Fine-tuning</a>するにしてもどのタスクか?を示す特殊な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を導入するなどして形式が統一的でなかった。
+  - 本論文以降、ある1つの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5Z+655uk44Oi44OH44OrIHwgRm91bmRhdGlvbiBNb2RlbA==">基盤モデル</a>に対し、様々なタスクの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>への指示文と望ましい応答のペアという形式が統一的なデータセットを使って<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">Fine-tuning</a>することが一般的となった。
+
+## アラインメント | Alignment<a id="44Ki44Op44Kk44Oz44Oh44Oz44OIIHwgQWxpZ25tZW50"></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のモデル開発を大きく3つのステップに分けたときの最後のステップ。
+  - ステップ1. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>
+  - ステップ2. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">指示学習</a>
+  - **ステップ3. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#44Ki44Op44Kk44Oz44Oh44Oz44OIIHwgQWxpZ25tZW50">アラインメント</a> ★**
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">指示学習</a>した<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>を人間の価値基準・倫理・安全性要件に沿って調整させるステップ。
+- 一般的に、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Ieq5bex5pWZ5bir44GC44KK5a2m57+SIHwgU2VsZi1zdXBlcnZpc2VkIExlYXJuaW5n">自己教師あり学習</a>の一種である<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UkxIRiB8IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJvbSBIdW1hbiBGZWVkYmFjaw==">RLHF</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5pWZ5bir44GC44KK5a2m57+SIHwgU3VwZXJ2aXNlZCBMZWFybmluZw==">教師あり学習</a>の一種であるDPOなどの手法が用いられる。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a>社のChatGPTがこの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#44Ki44Op44Kk44Oz44Oh44Oz44OIIHwgQWxpZ25tZW50">アラインメント</a>をRLFHという<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5by35YyW5a2m57+SIHwgUmVpbmZvcmNlbWVudCBMZWFybmluZw==">強化学習</a>ベースの手法で実施しているということで注目を集めたが、技術的詳細はクローズドで実際のところこの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UkxIRiB8IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJvbSBIdW1hbiBGZWVkYmFjaw==">RLHF</a>がどのくらい有効なのかはよくわかっていない。
+
+## 事後学習 | Post-training<a id="5LqL5b6M5a2m57+SIHwgUG9zdC10cmFpbmluZw=="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のモデル開発を大きく3つのステップに分けたとき、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>(1番目のステップ)の後に実施するステップという意味で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">指示学習</a>と<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#44Ki44Op44Kk44Oz44Oh44Oz44OIIHwgQWxpZ25tZW50">アラインメント</a>の総称として使われることがある。
+  - ステップ1. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>
+  - **ステップ2. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">指示学習</a> ★**
+  - **ステップ3. <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#44Ki44Op44Kk44Oz44Oh44Oz44OIIHwgQWxpZ25tZW50">アラインメント</a> ★**
+
+## 基盤モデル | Foundation Model<a id="5Z+655uk44Oi44OH44OrIHwgRm91bmRhdGlvbiBNb2RlbA=="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>で膨大なテキストデータを学習した<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のこと。
+- 様々なタスク(Q&A、翻訳、要約、センチメント分析、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>)向けに<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5oyH56S65a2m57+SIHwgSW5zdHJ1Y3Rpb24gdHVuaW5n">指示学習</a>できる。
+
+## SFT | Supervised Fine-tuning<a id="U0ZUIHwgU3VwZXJ2aXNlZCBGaW5lLXR1bmluZw=="></a>
+
+- 特に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の学習に関して使われる用語で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5Z+655uk44Oi44OH44OrIHwgRm91bmRhdGlvbiBNb2RlbA==">基盤モデル</a>に対して、あるタスクのデータセット(<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>への指示文と望ましい応答のペア)を用意し、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">Fine-tuning</a>する。
+- タスクとは具体的には、Q&A、翻訳、要約、センチメント分析、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>など。
 
 ## LoRA | Low-Rank Adaptation<a id="TG9SQSB8IExvdy1SYW5rIEFkYXB0YXRpb24="></a>
 
@@ -19,10 +68,6 @@
 ## RLHF | Reinforcement Learning from Human Feedback<a id="UkxIRiB8IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJvbSBIdW1hbiBGZWVkYmFjaw=="></a>
 
 - 人間の好みを反映した報酬モデルを用いて、PPOなどの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5by35YyW5a2m57+SIHwgUmVpbmZvcmNlbWVudCBMZWFybmluZw==">強化学習</a>で<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>を微調整する手法。ChatGPTで活用。
-
-## SFT | Supervised Fine-tuning<a id="U0ZUIHwgU3VwZXJ2aXNlZCBGaW5lLXR1bmluZw=="></a>
-
-- 人間の生成例や指示に対する模範応答などを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5pWZ5bir44GC44KK5a2m57+SIHwgU3VwZXJ2aXNlZCBMZWFybmluZw==">教師あり学習</a>でモデルに学習させる工程。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UkxIRiB8IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJvbSBIdW1hbiBGZWVkYmFjaw==">RLHF</a>の前段階として使われる。
 
 ## Self-Instruct<a id="U2VsZi1JbnN0cnVjdA=="></a>
 

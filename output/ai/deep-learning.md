@@ -6,7 +6,7 @@
 
 ## ファインチューニング | Fine-tuning<a id="44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJldHJhaW5pbmc=">事前学習</a>済みモデルに対し、特定のタスクやドメインに合わせて勾配更新を行うトレーニング。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>済みモデルに対し、特定のタスクやドメインに合わせて勾配更新を行うトレーニング。
 
 ## 学習率 | Learning Rate<a id="5a2m57+S546HIHwgTGVhcm5pbmcgUmF0ZQ=="></a>
 
@@ -86,7 +86,7 @@
 
 ## 転移学習 | Transfer Learning<a id="6Lui56e75a2m57+SIHwgVHJhbnNmZXIgTGVhcm5pbmc="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJldHJhaW5pbmc=">事前学習</a>済みモデルの知識を別タスクに応用する学習パラダイム。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">ファインチューニング</a>と併用。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>済みモデルの知識を別タスクに応用する学習パラダイム。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">ファインチューニング</a>と併用。
 
 ## 過学習 | Overfitting<a id="6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc="></a>
 
