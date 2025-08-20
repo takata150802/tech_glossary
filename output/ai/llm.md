@@ -13,7 +13,7 @@
   - サーベイ論文:
     - Zhao, Wayne Xin, et al. "A survey of large language models." arXiv preprint arXiv:2303.18223 1.2 (2023).　https://arxiv.org/abs/2303.18223
       - 初版version1は2023年3月31日だが、v2,v3...とアップデートされており、version16が2025年3月11日に公開。
-      - ※ 下記図は、本サービス論文のFigure.3を引用したものです。
+      - ※ 下記図は、本サーベイ論文のFigure.3を引用したものです。
         - ![](./llm.md-ASurveyOfLLM_figure3.png)
 
 ## リーダーボード | LLMリーダーボード | Leaderboard | LLM Leaderboard<a id="44Oq44O844OA44O844Oc44O844OJIHwgTExN44Oq44O844OA44O844Oc44O844OJIHwgTGVhZGVyYm9hcmQgfCBMTE0gTGVhZGVyYm9hcmQ="></a>
