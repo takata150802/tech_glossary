@@ -2,7 +2,40 @@
 
 
 ## 大規模言語モデル| Large Language Model | LLM 
-- Transformerベースのアーキテクチャを用いて、大規模なコーパスを自己教師あり学習により事前学習した自然言語生成モデル。
+- 大規模な計算資源を使い、一般的にTransformerベースの大規模な言語モデルを、Web上から収集した大規模なテキストデータで学習させたモデル。
+  - 2010年代、**主に画像認識や物体検出を行う画像系の深層学習モデルの研究開発が注目を集め、本来ゲーミング用途に使われるGPUが深層学習モデルの研究開発に用いられるようになった(GPGPUの一環)**。その後、Google社主導のTensorFlowやMeta社(旧Facebook社)主導のPyTorchといった深層学習フレームワークがOSSでライセンスの範囲内で自由に利用できることも手伝って、**大規模なGPU計算資源を使った深層学習モデルの学習が様々な研究機関・大学・企業で行われるようになった。**
+  - 2017年、**Google社の論文「Attention Is All You Need」にて提唱された自然言語系の深層学習モデルTransformerは、自然言語処理、特に機械翻訳の分野で優れた性能を示し、自然言語処理のおける深層学習のブレイクスルー**となった。この深層学習モデルTransformerの最も重要なアイディアであるアテンション機構は、ほぼ全ての著名なLLMが継承しているアイディアであるので、本論文はLLM分野における基礎的な論文とみなされている。
+  - 2018年、OpenAI社の論文「Improving Language Understanding by Generative Pre-Training」で初めて、GPT(=いわゆるLLMの事前学習)が提唱された。従来、自然言語処理系の深層学習モデルは人手でラベル付けしたデータセットで教師あり学習しており、人手でのラベル付けは高コストなため大規模なデータセット構築の制約となっていた。一方で、**GPT(=いわゆるLLMの事前学習)は教師なし学習のためWeb上から収集した膨大なテキストデータを深層学習モデルに学習させることを実現し、大きなブレイクスルー**となった。2022年、OpenAI社がChatGPT(=LLMを用いたChatBotのWebサービス)がリリースされると世間の注目を集め、広く認知されるに至った。2025年現在、北米/中国IT大手が研究開発を牽引し、多くのプロダクト・サービスにLLMが投入され商業的成功を収めている。
+
+**著名なLLM:**
+- LLMの研究開発競争は激しく、著名なLLMは日々アップデートが必要なため下記のサーベイ論文、もしくはリーダーボードを参照。
+  - サーベイ論文: 
+    - Zhao, Wayne Xin, et al. "A survey of large language models." arXiv preprint arXiv:2303.18223 1.2 (2023).　https://arxiv.org/abs/2303.18223
+      - 初版version1は2023年3月31日だが、v2,v3...とアップデートされており、version16が2025年3月11日に公開。
+      - ※ 下記図は、本サービス論文のFigure.3を引用したものです。
+        - ![](./llm.md-ASurveyOfLLM_figure3.png)
+
+## リーダーボード | LLMリーダーボード | Leaderboard | LLM Leaderboard
+- 主にLLMや画像生成AIの分野で、様々なモデルの性能を客観的に比較・評価するオンラインプラットフォーム
+- 具体例:
+  - Chatbot Arena: 
+    - <a href="https://lmarena.ai/leaderboard">https://lmarena.ai/leaderboard</a>
+    - LMArenaによるリーダーボード。
+    - **ユーザー投票**でランキングを決める(定量評価も大事だが、ユーザーがどう感じたか?が最も重要というスタンス)。
+    - 著名な公開モデルだけでなく、GPT-4oなど**クローズドな商用モデル**もランキングに含まれている。
+  - Open LLM Leaderboard: 
+    - <a href="https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard">https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard</a>
+    - **Hugging Face社による**主に公開モデルのリーダーボード
+  - Swallow LLM Leaderboard v2
+    - <a href="https://swallow-llm.github.io/evaluation/index.ja.html">https://swallow-llm.github.io/evaluation/index.ja.html</a>
+    - 東京科学大学(旧:東工大)岡崎研・横田研 Swallowプロジェクトが、日本語に強いLLMの開発と並行して、公開されているLLMの評価実験を独自に進めているもの。**日本語の**評価タスク定量評価が含まれている。
+  - Nejumi LLMリーダーボード3
+    - <a href="https://wandb.ai/wandb-japan/llm-leaderboard3/reports/Nejumi-LLM-3--Vmlldzo3OTg2NjM2">https://wandb.ai/wandb-japan/llm-leaderboard3/reports/Nejumi-LLM-3--Vmlldzo3OTg2NjM2</a>
+    - WandB社によるリーダーボード。**日本語の**評価タスク定量評価が含まれている。
+    - 著名な公開モデルだけでなく、GPT-4oなど**クローズドな商用モデル**もランキングに含まれている。
+  - Open Japanese LLM Leaderboard
+    - <a href="https://huggingface.co/spaces/llm-jp/open-japanese-llm-leaderboard">https://huggingface.co/spaces/llm-jp/open-japanese-llm-leaderboard</a>
+    - LLM-jp によるリーダーボード。 評価ツール llm-jp-eval を活用し、16種類のタスクで日本語の大規模言語モデルを評価している。
 
 ## 推論 | Inference	
 - 学習済みモデルに対してプロンプトを与え、次のトークンまたはテキスト全体を生成させる処理。
