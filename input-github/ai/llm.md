@@ -96,3 +96,33 @@
 ## コサイン類似度 | Cosine Similarity
 - ベクトル間の角度のコサイン値で類似度を測定。エンベディング間比較に使用。	
 
+## コーパス | Corpus
+- テキストデータのデータセット。
+- 自然言語処理の分野で、解析対象となる文書群全体のこと。
+
+## 語彙 | Vocabulary
+- コーパス内に現れる全ての単語を集めたもの
+
+## 単語袋モデル | Bag of Words | BoW
+
+- 情報検索の分野で、ある文章をベクトルで表現するための手法の一種。
+- ある文章$d$に対して、語彙に含まれる単語の出現回数をカウントし、それを以ってその文章$d$を表すベクトルする。
+- 語順は考慮されない。
+- 具体例: 
+  - (引用元): <a href="https://qiita.com/kazukiii/items/d717add45bbc76a71430">https://qiita.com/kazukiii/items/d717add45bbc76a71430</a>
+  - 「This is an apple」をBoWでベクトル化すると[1, 0, 0 ,1, 1, 01, ...]となる。
+    - ![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F265344%2F04fea720-330f-2f83-b00b-afb93bcad2d0.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=5841ca0df41da2b1a265ecc43a1cfebd)
+
+## TF-IDF | Term Frequency–Inverse Document Frequency
+
+- 情報検索の分野で、ある文章をベクトルで表現するための手法の一種。
+- Bag of Wordsの改良版。
+- 語順は考慮されない。
+- ある文章$d$の各単語$t$に対して、その単語$t$がどれくらい重要かを表す統計量$\text{tf-idf}(t,d)$を計算し(※下記式参照)、全単語分並べたベクトルを以って、その文章$d$を表すベクトルとする。
+  - 第一項$\text{tf}(t,d)$は、Term frequency (単語頻度)、すなわちある文書$d$内でのある単語$t$の出現頻度である。
+  - 第二項$\log \frac{N}{\text{df}(t)}$は、Inverse document frequency (逆文書頻度)、すなわちある単語$t$が全文章内でどれだけ珍しいかを示す項で、ある単語$t$を含む文書数を総文章数$N$で除算し、その商の逆数の対数をとったものである。
+    - これは、例えば"the"という非常に普遍的で高頻出な単語を多く含む文書を誤って重要視してしまうことを避けるために用いられる。
+
+$$
+\text{tf-idf}(t,d) = \text{tf}(t,d) \cdot \log \frac{N}{\text{df}(t)} \\
+$$

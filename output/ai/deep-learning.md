@@ -95,3 +95,16 @@
 ## 音声認識 | Automatic Speech Recognition | ASR<a id="6Z+z5aOw6KqN6K2YIHwgQXV0b21hdGljIFNwZWVjaCBSZWNvZ25pdGlvbiB8IEFTUg=="></a>
 
 - 音響<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#54m55b606YePIHwgRmVhdHVyZQ==">特徴量</a>から系列ラベル（文字列）への変換問題。典型的にはCTC損失や<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Oq44Kr44Os44Oz44OI44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgUk5O">RNN</a>-Tを使用。
+
+## コサイン類似度 | Cosine Similarity<a id="44Kz44K144Kk44Oz6aGe5Ly85bqmIHwgQ29zaW5lIFNpbWlsYXJpdHk="></a>
+
+- 2つのベクトルがどれだけ同じ方向を向いているかを数値で表す指標。
+
+- 具体的には、2つのベクトル $u, v$ の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Kz44K144Kk44Oz6aGe5Ly85bqmIHwgQ29zaW5lIFNpbWlsYXJpdHk=">コサイン類似度</a>とは、 $u, v$のなす角の余弦(下記式)。
+
+  - 方向の近さを評価する。ベクトルの大きさは考慮しない。
+    $$
+    \\cos(u,v) = \\frac{u \\cdot v}{|u||v|}
+    $$
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#VEYtSURGIHwgVGVybSBGcmVxdWVuY3nigJNJbnZlcnNlIERvY3VtZW50IEZyZXF1ZW5jeQ==">TF-IDF</a>や<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#d29yZDJ2ZWM=">word2vec</a>などの手法である文章をベクトル化した結果(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ko44Oz44G544OH44Kj44Oz44KwIHwgRW1iZWRkaW5n">Embedding</a>)の比較に用いられる。
