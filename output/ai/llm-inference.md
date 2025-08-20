@@ -18,7 +18,7 @@
   - In-flight batching
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#U3BlY3VsYXRpdmUgRGVjb2RpbmcgfCDmipXmqZ/nmoTjg4fjgrPjg7zjg4fjgqPjg7PjgrA=">Speculative Decoding</a>
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#Rmxhc2hBdHRlbnRpb24=">FlashAttention</a>
-  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a>互換API
+  - Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a>互換API
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#TG9SQSB8IExvdy1SYW5rIEFkYXB0YXRpb24=">LoRA</a>対応
     \- マルチGPU・マルチノード分散<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>
 
@@ -35,7 +35,7 @@
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#Rmxhc2hBdHRlbnRpb24=">FlashAttention</a>
   - Paged<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwgQXR0ZW50aW9u">Attention</a>
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-optimization.md#6YeP5a2Q5YyWIHwgUXVhbnRpemF0aW9u">量子化</a>（bitsandbytes、GPTQ、AWQなど）
-  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a> Chat API互換のMessages API
+  - Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> Chat API互換のMessages API
 
 ## NVIDIA Triton Inference Server<a id="TlZJRElBIFRyaXRvbiBJbmZlcmVuY2UgU2VydmVy"></a>
 
@@ -75,7 +75,7 @@
 - GitHub: https://github.com/jmorganca/ollama
 - ライセンス: MIT License​
 - ローカル環境での<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a><a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を簡単に行うためのツール。
-  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a> API互換のインターフェース
+  - Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> API互換のインターフェース
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#bGxhbWEuY3Bw">llama.cpp</a>を内部で利用し、モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を実行
   - モデルの自動ダウンロードと管理
   - DockerベースでLlama 2、Mistral、Code Llamaなどのモデルをサポート
@@ -87,7 +87,7 @@
 
 ## Speculative Decoding | 投機的デコーディング<a id="U3BlY3VsYXRpdmUgRGVjb2RpbmcgfCDmipXmqZ/nmoTjg4fjgrPjg7zjg4fjgqPjg7PjgrA="></a>
 
-- 小さく高速な言語モデルで仮予測を生成し、それを大きなモデルで検証・補完することで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を高速化する仕組み。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#T3BlbkFJ">OpenAI</a>のMedusaやMetaのEAGLEなどが代表例。
+- 小さく高速な言語モデルで仮予測を生成し、それを大きなモデルで検証・補完することで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>を高速化する仕組み。Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a>のMedusaやMetaのEAGLEなどが代表例。
 
 ## In-Flight Batching<a id="SW4tRmxpZ2h0IEJhdGNoaW5n"></a>
 

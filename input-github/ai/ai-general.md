@@ -1,5 +1,49 @@
 <!-- 記事URL:https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md# -->
 
+## 人工知能 | Artificial Intelligence | AI　
+- 人間の知的な行動を模倣するコンピュータシステム
+- 2010代~2024年現在まで続くAIブームは第3次AIブーム(3rd Wave)とされている。
+  - First Wave (1950s-1970s):
+    - GOFAI（Good Old Fashioned AI；古き良き人工知能）
+    - 現在に至るAI研究の基礎となるフレームワークが輩出:
+      - シンボリックAIの一般問題解決器GPS（General
+Problem Solver）
+      - ニューラルネットワークにおけるパーセプトロン
+        - 引用元: https://ja.wikipedia.org/wiki/甘利俊一
+          - `甘利俊一は連続体力学、情報理論、ニューラルネットワークなどを研究してきた。1967年、多層パーセプトロンの確率的勾配降下法を考えて定式化に成功したが、この早すぎた発見は当時の計算機の能力の低さもあり検証が難しく、あまり注目されずに終わった。しかし、1986年にデビッド・ラメルハート、ジェフリー・ヒントン、ロナルド・J・ウィリアムスが、この方法を再発見し、誤差逆伝播法として発表した事で、ニューラルネットワーク研究の第2次ブームへと繋がっている。勾配消失問題などの技術的困難があり、この第2次ブームは終焉を迎えたが、その後のディープラーニングブームへと続く礎にもなった。`
+      - フレーム問題
+      - 意味ネットワーク, フレーム理論
+      - ファジー集合
+      - 自然言語処理システム SHRDLU
+      - 人工無能システム ELIZA
+      - 人工知能用プログラミング言語 LISP
+      - 第1回人工知能国際会議 IJCAI 1969 @ワシントン 
+    - この後最初の「AI の冬」時代へ
+  - Second Wave (1980s-1990s):
+    - 人間の専門家の知識を持った AI が専門家のような推論を行うエキスパートシステム（Expert System）
+      - 人間の専門家の知識を引き出すタスクは知識エンジニアリングと呼ばれ，知識エンジニアという職業まで生まれた
+    - 病気の診断を行う MYCIN（マイシン）
+    - 油田の推定を行うディップメーターアドバイザー
+    - コンピュータの構成を行う XCON（エックスコン）
+    - 日本 通産省: 第五世代コンピュータプロジェクト,1982年~
+      - 引用元: https://museum.ipsj.or.jp/computer/other/0002.html
+        - `通産省は1982年に第五世代コンピュータプロジェクトをスタートさせた．このプロジェクトは，国際貢献を果たしつつ技術先進国として発展するという我が国の政策のもとに始められたもので，国際的にみても創造的・先駆的な技術という意味を込めて「第五世代コンピュータ」と名付けられた．技術目標を「知識情報処理を指向した新しいコンピュータ技術の研究開発」と定め，推進母体として新世代コンピュータ技術開発機構（ICOT）が設立され，技術目標に含まれる多くの要素技術の実証・評価を行うために，並列推論型コンピュータのプロトタイプシステムの試作が行われた．このシステムは，知識情報処理指向のコンピュ−タとしては，世界最高速，かつ，最大規模のものであった．このシステムは，並列推論マシン（PIM）と呼ばれる大規模な並列ハードウェアシステムを持ち，PIM は512台の要素プロセッサからなるPIM/pや256台の要素プロセッサを持つPIM/mなど5つのモデルが作られた．11年間で約540億を投じ1992年度をもって終了した．現在，PIM/pおよびPIM/mは国立科学博物館で保存されている．また，下記のWebで「第五世代博物館」が公開されている．`
+          - <a href="http://www.jipdec.or.jp/archives/icot/ARCHIVE/HomePage-J.html">http://www.jipdec.or.jp/archives/icot/ARCHIVE/HomePage-J.html</a>
+    - 暗黙知の顕在化によるエキスパートシステムの限界などにより，15 年に及ぶ AI 冬の時代へ。この間における主要な進歩は下記の通り：
+      - ベイジアンネットワーク | Bayesian Network
+      - 遺伝的アルゴリズム | Genetic Algorithm
+      - 遺伝的プログラミング  | Genetic Programming
+      - マルチエージェントシステム | Multi-agent System
+      - 強化学習
+      - 統計的機械学習, サポ―トベクターマシン
+      - データマイニング | Data Minig
+  - Third Wave (2010s-Present):
+    - コンピューター ハードウェアの進歩(とGPGPUの活用)と大規模なデータセットによるDeep Learningのブレークスルー
+      - 画像認識コンペティションILSVRC2012でトロント大のAlexNetがエラー率 15.3% で優勝し、次点よりも 10.8% 以上低くDeep Learningが広く認知されるきっかけとなった。
+        - `Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "ImageNet classification with deep convolutional neural networks." Communications of the ACM 60.6 (2017): 84-90.`
+        - ILSVRC2012の次点は東大知能機械 原田研究室の牛久祥孝氏。「ヒントンに敗れた男」として日本経済新聞の記事で紹介されるもお名前がtypo…
+    - Google、Meta(旧Facebook)、Microsoft、Amazon等の北米IT大手が研究開発を牽引し、多くのプロダクト・サービスにAIが投入され商業的成功を収めている
+
 ## 機械学習 | Machine Learning
 - 明示的なルール記述なしにデータからパターンを学習するアルゴリズム全般。
 
@@ -66,6 +110,55 @@
 
 ## ロジット関数 | Logit Function
 - 確率値をオッズの対数に変換する写像。ロジスティック回帰の決定関数で使用。
+
+## 最小二乗法 | Least Square Method  
+- 目的変数Yを説明変数Xの線形モデルで表したときの二乗誤差($=\epsilon^2$)を最小にするパラメータ$\theta$を求める手法
+- 線形モデルの誤差$\epsilon$を多変量正規分布と仮定したときの最尤推定に相当する
+
+```math
+\begin{align}
+線形モデル&: Y = X\theta + \epsilon \\ 
+目的変数&: Y \\
+説明変数&: X \\
+パラメータ&: \theta \\
+誤差&: \epsilon \\
+推定値&: \hat{\theta} = (X^TX)^{-1}X^TY ・・・①
+\end{align}
+```
+**① 推定値 $\hat{\theta}$の導出:**
+
+```math
+\begin{align}
+&\begin{split}
+\epsilon^2 &=(Y-X\theta)^T(Y-X\theta) \\
+&=Y^TY - Y^TX\theta - \theta^TX^TY + \theta^TX^TX\theta \\
+\end{split} \\
+&\begin{split}
+\frac{\partial }{\partial \theta} \epsilon^2 &= \frac{\partial }{\partial \theta} Y^TY - \frac{\partial }{\partial \theta} Y^TX\theta - \frac{\partial }{\partial \theta} \theta^TX^TY + \frac{\partial }{\partial \theta} \theta^TX^TX\theta \\
+&= 0 + \frac{\partial }{\partial \theta} Y^TX\theta - \frac{\partial }{\partial \theta} (X^TY)^T\theta + \frac{\partial }{\partial \theta} \theta^TX^TX\theta \\
+&= -2 \frac{\partial }{\partial \theta} Y^TX\theta + \frac{\partial }{\partial \theta} \theta^TX^TX\theta ・・・② \\
+&= -2X^TY+2X^TX\theta ・・・③ \\
+\end{split}
+\end{align}
+```
+
+したがって、$\frac{\partial }{\partial \theta} \epsilon^2 = 0$となるような$\theta$は、
+```math
+\begin{align}
+0 &= -2X^TY+2X^TX\theta \\
+X^TX\theta &= X^TY \\
+(X^TX)^{-1}X^TX\theta &= (X^TX)^{-1}X^TY \\
+\theta &= (X^TX)^{-1}X^TY ・・・上述の①の式
+\end{align}
+```
+
+なお②から③の式変形は、
+```math
+\begin{align}
+第１項&: - 2\frac{\partial }{\partial \theta} Y^TX\theta = - 2 (Y^TX)^T = -2 X^TY \\
+第2項&: \frac{\partial }{\partial \theta} \theta^TX^TX\theta = 2X^TX\theta 
+\end{align}
+```
 
 ## 尤度 | 尤度関数 | Likelihood | Likehood function
 
@@ -184,3 +277,8 @@
 ```math
   事象AとBとCの同時確率: P(A \cap B \cap C) = P(A|B \cap C)P(B \cap C) = P(A|B \cap C)P(B|C)P(C)
 ```
+# 参考文献
+- 朱鷺の杜Wiki https://ibisforest.org/index.php?FrontPage
+- https://www.kamishima.net/archive/mldm-overview.pdf
+- https://www.ieice-hbkb.org/files/S3/S3gun_03hen_01.pdf
+- https://twitter.com/losnuevetoros/status/1168326617023700992

@@ -38,4 +38,4 @@
 
 ## RoBERTa | Robustly optimized BERT approach<a id="Um9CRVJUYSB8IFJvYnVzdGx5IG9wdGltaXplZCBCRVJUIGFwcHJvYWNo"></a>
 
-- Facebook <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> Researchが開発した<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#QkVSVCB8IEJpZGlyZWN0aW9uYWwgRW5jb2RlciBSZXByZXNlbnRhdGlvbnMgZnJvbSBUcmFuc2Zvcm1lcnM=">BERT</a>の改良版で、トレーニング手法やパラメータのチューニングを改善したモデル。
+- Facebook <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> Researchが開発した<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#QkVSVCB8IEJpZGlyZWN0aW9uYWwgRW5jb2RlciBSZXByZXNlbnRhdGlvbnMgZnJvbSBUcmFuc2Zvcm1lcnM=">BERT</a>の改良版で、トレーニング手法やパラメータのチューニングを改善したモデル。
