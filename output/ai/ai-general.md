@@ -87,13 +87,60 @@
 
 - 確率値をオッズの対数に変換する写像。ロジスティック<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Zue5biwIHwgUmVncmVzc2lvbg==">回帰</a>の決定関数で使用。
 
-## 尤度 | Likelihood<a id="5bCk5bqmIHwgTGlrZWxpaG9vZA=="></a>
+## 尤度 | 尤度関数 | Likelihood | Likehood function<a id="5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u"></a>
 
-- 観測データの下でのパラメータの確からしさを表す関数。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5pyA5bCk5rOVIHwgTWF4aW11bSBMaWtlbGlob29kIEVzdGltYXRpb24=">最尤法</a>の基礎。
+- 観測値がxとなる確率を何らかの確率モデルp(x; θ)で表現しようとしている状況を考える。
+- 例えば観測値として{x_1, x_2, ..., x_n}が得られたとき、何らかの確率モデルp(x; θ)が本当に正しいなら、この観測値{x_1, x_2, ..., x_n}が確率モデルのパラメータθの下で生じる確率は下記式で書ける。これが<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>。
 
-## 最尤法 | Maximum Likelihood Estimation<a id="5pyA5bCk5rOVIHwgTWF4aW11bSBMaWtlbGlob29kIEVzdGltYXRpb24="></a>
+```math
+尤度: L(X = \{x_1, x_2, ..., x_n\};\theta) = \Pi_{i=1}^N p(x_i;\theta) 
+```
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwgTGlrZWxpaG9vZA==">尤度</a>関数を最大化するパラメータ推定法。多くの統計モデルの学習基盤。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>とは**確率モデルのパラメータθの尤もらしさ**を表す関数。具体的には、確率モデルとそのパラメータθが本当に正しいなら実際に観測された観測値系列の発生確率がどれくらいになるかを計算する関数。これは、パラメータθが尤もらしいなら今回の観測値系列の発生確率(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>)は実際に観測されたものであるので当然高くなるはずで、逆に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>が低ければそのパラメータθは今回の観測値系列を上手く表現できておらず尤もらしくないという考え方に基づいている。
+
+**具体例1:**
+
+- 観測値はコイン投げの裏表で、コインが表になる確率を下記の確率モデルp(x; θ)で表現しようとしている状況を考える。
+- 例えば観測値として{裏, 表}が得られたとき、下記の確率モデルp(x; θ)が本当に正しいなら、この観測値{裏, 表}が確率モデルのパラメータθの下で生じる確率は下記式で書ける(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>)。
+
+```math
+確率モデル: p(x; \theta) = 
+\begin{cases}
+  \theta  \text{\ \ \ \ \ \ \ \ ※\ x\ ==\ 表の場合} \\\
+  1 - \theta \text{※\ x\ ==\ 裏の場合}
+\end{cases}
+```
+
+```math
+尤度: L(X=\{裏, 表\};\theta) = p(裏;\theta) \cdot p(表;\theta) = (1 -\theta) \cdot \theta
+```
+
+- なお、上記の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>を最大化するのはθ=0.5である(0≦θ≦1で(1-θ)θはθ=0.5で最大となるので)。
+
+**具体例2:**
+
+- 観測値は<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の出力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>がある出力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を生成する確率を確率モデル<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>(入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>列; 出力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>; θ)で表現しようとしている状況を考える。
+  - θは<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重みパラメータ</a>となる。
+- 例えば観測値として{日本の首都は?→東京, 日本の首都は?東京→です。}が得られたとき、確率モデル<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>(入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>列; 出力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>; θ)が本当に正しいなら、この観測値{日本の首都は?→東京, 日本の首都は?東京→です。}が確率モデルのパラメータθの下で生じる確率は下記式で書ける。
+
+```math
+尤度: L(X=\{日本の首都は?→東京, 日本の首都は?東京→です。\};\theta) \\\
+= LLM(日本の首都は?;東京;\theta) \cdot LLM(日本の首都は?東京;です。;\theta)
+```
+
+- なお、上記の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>を最大化するθを求めるのが<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の学習に相当する。ただ、代数的に求めることができないので数値解析的に求める必要があり、具体的には<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Kqk5beu6YCG5Lyd5pKt5rOVIHwg44OQ44OD44Kv44OX44Ot44OR44Ky44O844K344On44OzIHwgQmFja3Byb3BhZ2F0aW9u">誤差逆伝播法</a>が用いられる。
+
+## 最尤推定 | 最尤推定法 | Maximum Likelihood Estimation<a id="5pyA5bCk5o6o5a6aIHwg5pyA5bCk5o6o5a6a5rOVIHwgTWF4aW11bSBMaWtlbGlob29kIEVzdGltYXRpb24="></a>
+
+- 観測値がxとなる確率を何らかの確率モデルp(x; θ)で表現しようとしている状況で、最適なパラメータθを推定する手法。
+- 具体的には、観測値系列{x_1, x_2, ..., x_n}が得られたとき、確率モデルp(x; θ)とそのパラメータθが正しいなら、その観測値系列の発生確率は確率モデルのパラメータθの関数となる(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>)。
+
+```math
+尤度: L(X = \{x_1, x_2, ..., x_n\};\theta) = \Pi_{i=1}^N p(x_i;\theta) 
+```
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5pyA5bCk5o6o5a6aIHwg5pyA5bCk5o6o5a6a5rOVIHwgTWF4aW11bSBMaWtlbGlob29kIEVzdGltYXRpb24=">最尤推定</a>とは、この<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>を最大化するパラメータθの値を以ってθの推定値とする手法。
+- これは、パラメータθが尤もらしいなら今回の観測値系列の発生確率(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>)は実際に観測されたものであるので当然高くなるはずで、逆に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5bCk5bqmIHwg5bCk5bqm6Zai5pWwIHwgTGlrZWxpaG9vZCB8IExpa2Vob29kIGZ1bmN0aW9u">尤度</a>が低ければそのパラメータθは今回の観測値系列を上手く表現できておらず尤もらしくないという考え方に基づいている。
 
 ## 標本誤差 | Sampling Error<a id="5qiZ5pys6Kqk5beuIHwgU2FtcGxpbmcgRXJyb3I="></a>
 
