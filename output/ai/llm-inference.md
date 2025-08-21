@@ -14,7 +14,7 @@
 - ライセンス: Apache License 2.0 ​
 - UC BerkeleyのSky Computing Labが開発
 - 高スループットかつメモリ効率の良い<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#TExN5o6o6KuW44K144O844OQ44O8IHwgTExNIEluZmVyZW5jZSBTZXJ2ZXI=">LLM推論サーバー</a>。
-  - Paged<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwgQXR0ZW50aW9u">Attention</a>
+  - Paged<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">Attention</a>
   - In-flight batching
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#U3BlY3VsYXRpdmUgRGVjb2RpbmcgfCDmipXmqZ/nmoTjg4fjgrPjg7zjg4fjgqPjg7PjgrA=">Speculative Decoding</a>
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#Rmxhc2hBdHRlbnRpb24=">FlashAttention</a>
@@ -33,7 +33,7 @@
   - SSEによる<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>ストリーミング
   - Continuous batching
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#Rmxhc2hBdHRlbnRpb24=">FlashAttention</a>
-  - Paged<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwgQXR0ZW50aW9u">Attention</a>
+  - Paged<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">Attention</a>
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-optimization.md#6YeP5a2Q5YyWIHwgUXVhbnRpemF0aW9u">量子化</a>（bitsandbytes、GPTQ、AWQなど）
   - Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> Chat API互換のMessages API
 

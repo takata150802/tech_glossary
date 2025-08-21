@@ -37,6 +37,40 @@
     - <a href="https://huggingface.co/spaces/llm-jp/open-japanese-llm-leaderboard">https://huggingface.co/spaces/llm-jp/open-japanese-llm-leaderboard</a>
     - LLM-jp によるリーダーボード。 評価ツール llm-jp-eval を活用し、16種類のタスクで日本語の大規模言語モデルを評価している。
 
+## Attention is all you need
+- Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017). https://arxiv.org/abs/1706.03762
+- 2017年、Google社の論文
+- 本論文にて提唱された自然言語系の深層学習モデルTransformerは、自然言語処理、特に機械翻訳の分野で優れた性能を示し、自然言語処理のおける深層学習のブレイクスルーとなった
+- この深層学習モデルTransformerの最も重要なアイディアであるアテンション機構は、ほぼ全ての著名なLLMが継承しているアイディアであるので、本論文はLLM分野における基礎的な論文とみなされている。
+
+## トランスフォーマー | Transformer
+- 2017年、Google社の論文「Attention is all you need」にて提唱された自然言語系の深層学習モデル
+  - 自然言語処理、特に機械翻訳の分野で優れた性能を示し、自然言語処理のおける深層学習のブレイクスルーとなった
+  - 本モデルの最も重要なアイディアであるアテンション機構は、ほぼ全ての著名なLLMが継承している
+
+- Hugging Face社によるOSSの深層学習ライブラリの1つ。
+  - 自然言語処理に限らず、コンピュータビジョン、音声処理、マルチモーダルタスクの最先端のモデルの定義、学習、推論に用いられる
+  - PyTorch、TensorFlow、JAXといった主要深層学習フレームワークに対応している
+
+## アテンション | アテンション機構 | Attention | Attention mechanism
+- 自然言語処理で良く用いられる深層学習モデルの構造の1種。
+- 著名な自然言語処理系の深層学習モデルTransformerの最も重要なアイディアで、ほぼ全ての著名なLLMが継承しているアイディアである
+
+- (引用元): <a href="https://speakerdeck.com/chokkan/20230327_riken_llm?slide=14">https://speakerdeck.com/chokkan/20230327_riken_llm?slide=14</a>
+  - ![alt text](./llm.md.Transformer_0.png)
+
+## リカレントニューラルネットワーク | RNN | Recurrent Neural Network
+- 自然言語処理で良く用いられる深層学習モデルの構造の1種。
+- 入力系列を1つずつ逐次的にニューラルネットワークに入力し、中間層の値を内部に保持していて、入力と中間層から出力を計算する。ニューラルネットワーク。このような構造により、入力系列の時間的依存関係を捉えることができる。
+- この特徴が、入力も出力も可変長な自然言語処理に適していたため、自然言語処理の分野で広く用いられていた。
+
+**RNNの課題:**
+- `原理上はトークン間の長期依存性を捉えることがでるが、固定長ベクトルであるアクティベーションだけでは、長期依存性の情報を保持しきれない`
+- `ネットワークが単語位置方向に深くなるため、学習が難しい。勾配消失もしくは勾配爆発が起きやすい`
+- (引用元): <a href="https://speakerdeck.com/chokkan/20230327_riken_llm?slide=12">https://speakerdeck.com/chokkan/20230327_riken_llm?slide=12</a>
+  - ![alt text](./llm.md.RNN_0.png)
+
+
 ## 推論 | Inference	
 - 学習済みモデルに対してプロンプトを与え、次のトークンまたはテキスト全体を生成させる処理。
 
@@ -52,8 +86,6 @@
 ## 位置エンコーディング | Positional Encoding
 - トークンの系列順序情報をモデルに与えるための埋め込み。絶対位置または相対位置を採用。
 
-## アテンション | Attention
-- 各トークンが他のトークンとの関連性を計算するメカニズム。Self-AttentionがTransformerの要。
 
 ## 自己回帰 | Autoregressive
 - 入力の過去のトークンを使って次のトークンを逐次生成するモデル構造。GPT系列などが該当。
