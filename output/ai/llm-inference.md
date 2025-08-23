@@ -30,7 +30,7 @@
 - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/llm-overview.md#SHVnZ2luZyBGYWNl">Hugging Face</a>が開発したRust/Python製の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-inference.md.md#TExN5o6o6KuW44K144O844OQ44O8IHwgTExNIEluZmVyZW5jZSBTZXJ2ZXI=">LLM推論サーバー</a>。
   - Llama、Falcon、GPT-NeoXなどのモデルに対応
   - Tensor Parallelism
-  - SSEによる<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>ストリーミング
+  - SSEによる<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>ストリーミング
   - Continuous batching
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#Rmxhc2hBdHRlbnRpb24=">FlashAttention</a>
   - Paged<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">Attention</a>
@@ -83,7 +83,7 @@
 
 ## KVキャッシュ | KV Cache<a id="S1bjgq3jg6Pjg4Pjgrfjg6UgfCBLViBDYWNoZQ=="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>中に過去のキーとバリュー（Key/Value）を保存しておき、次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>予測時に再利用することで、再計算を避けて<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>速度を大幅に向上させる技術。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>中に過去のキーとバリュー（Key/Value）を保存しておき、次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>予測時に再利用することで、再計算を避けて<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>速度を大幅に向上させる技術。
 
 ## Speculative Decoding | 投機的デコーディング<a id="U3BlY3VsYXRpdmUgRGVjb2RpbmcgfCDmipXmqZ/nmoTjg4fjgrPjg7zjg4fjgqPjg7PjgrA="></a>
 
