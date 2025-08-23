@@ -15,7 +15,7 @@
       - フレーム問題
       - 意味ネットワーク, フレーム理論
       - ファジー集合
-      - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQ">自然言語処理</a>システム SHRDLU
+      - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>システム SHRDLU
       - 人工無能システム ELIZA
       - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">人工知能</a>用プログラミング言語 LISP
       - 第1回<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">人工知能</a>国際会議 IJC<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a> 1969 @ワシントン
