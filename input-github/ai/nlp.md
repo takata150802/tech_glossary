@@ -129,9 +129,18 @@
 - (引用元): <a href="https://speakerdeck.com/chokkan/20230327_riken_llm?slide=12">https://speakerdeck.com/chokkan/20230327_riken_llm?slide=12</a>
   - ![alt text](./llm.md.RNN_0.png)
 
-## エンべディング | Embedding
-- 離散トークンを連続値ベクトル空間へ写像する手法。語彙空間のワンホットベクトルを低次元密ベクトルに変換し、意味的距離の保存を目指す。
-- 通常は入力エンべディングと位置エンべディングの加算で初期入力が構成される。
+
+## Embedding | 埋め込み
+- 離散的なシンボル（単語・トークン・IDなど）を実数のベクトル空間に写像する手法。
+- 自然言語処理系の深層学習モデルでは、一般的に
+  - 入力テキストをトークナイゼーションし、
+  - トークン列をEmbeddingし、
+  - 言語モデルの本体の処理に渡す 
+- Embeddingの具体例な処理としては、
+  - 語彙集合 $V$ と埋め込み次元 $d$ に対して、
+  - 行列 $E \in \mathbb{R}^{|V|\times d}$ を持ち、
+  - トークンID $i$ を $E_i$ にマッピングする。
+- 典型的には、行列Eの各要素の値は深層学習モデルの重みパラメータと同じ扱いで、学習処理によって決定される。
 
 ## SentencePiece 
 - トークン化を言語非依存に行うためのサブワード単位トークナイザー。Unigram Language ModelまたはBPEに基づき、語彙と分割境界を学習する。スペースを専用トークンとして扱うことで前処理不要。
@@ -168,6 +177,28 @@
 $$
 \text{tf-idf}(t,d) = \text{tf}(t,d) \cdot \log \frac{N}{\text{df}(t)} \\
 $$
+
+## Positional Encoding | 位置エンコーディング
+
+* **定義**: Transformerが系列情報を保持するために、入力埋め込みに付与する**位置情報ベクトル**。
+* **必要性**: Self-Attentionは入力を並列的に処理するため、**系列順序の情報が失われる**。
+* **種類**:
+
+  1. **固定型 (Sinusoidal Encoding, Vaswani et al. 2017)**
+
+     $$
+     PE_{(pos,2i)} = \sin \left(\frac{pos}{10000^{2i/d}}\right),\quad  
+     PE_{(pos,2i+1)} = \cos \left(\frac{pos}{10000^{2i/d}}\right)
+     $$
+
+     * 周期関数により位置関係を明示的に符号化。
+  2. **学習型 (Learned Positional Embedding)**
+
+     * 位置ごとに学習可能なベクトルを割り当てる。
+  3. **相対位置表現 (Relative Positional Encoding, Transformer-XL, RoPE)**
+
+     * トークン間の相対距離を符号化。LLaMAやGPT-4で採用。
+
 
 # 参考文献
 <!--- 数理・データサイエンス・AI教育強化拠点コンソーシアム https://www.mi.u-tokyo.ac.jp/6university_consortium.html --->

@@ -3,7 +3,7 @@
 ## 自然言語処理 | NLP | Natural Language Processing<a id="6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n"></a>
 
 - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">人工知能</a>の研究分野の1つで、人間の言語(=自然言語)を計算機で処理・理解・生成することを目的とする。
-- 当初、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>は主に画像処理の分野で発展したが、2010年代後半から<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>の分野でも<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>ベースの手法が導入され、現代の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>へ発展した。
+- 当初、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>は主に画像処理の分野で発展したが、2010年代後半から<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>の分野でも<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>ベースの手法が導入され、現代の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>へ発展した。
 - 代表的な応用例:
   - 機械翻訳(例: Google翻訳, DeepLなど)
   - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Z+z5aOw6KqN6K2YIHwgQXV0b21hdGljIFNwZWVjaCBSZWNvZ25pdGlvbiB8IEFTUg==">音声認識</a>
@@ -17,8 +17,8 @@
 |1950〜1980年代|ルールベース時代|手書きの文法規則や辞書に基づく処理|ELIZA(初期の対話システム), SYSTRAN(初期の機械翻訳)|言語の曖昧性や多様性に対応しきれない|
 |1990年代|統計的手法の時代|大規模<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44Kz44O844OR44K5IHwgQ29ycHVz">コーパス</a>から確率モデルを学習|n-gram(確率的言語モデル),Hidden Markov Model(HMM)による品詞タグ付けや<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Z+z5aOw6KqN6K2YIHwgQXV0b21hdGljIFNwZWVjaCBSZWNvZ25pdGlvbiB8IEFTUg==">音声認識</a>, <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#VEYtSURGIHwgVGVybSBGcmVxdWVuY3nigJNJbnZlcnNlIERvY3VtZW50IEZyZXF1ZW5jeQ==">TF-IDF</a>, <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#5Y2Y6Kqe6KKL44Oi44OH44OrIHwgQmFnIG9mIFdvcmRzIHwgQm9X">Bag of Words</a> による文書検索・<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>|文脈を短距離（n単語）しか扱えない。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Kqe5b2ZIHwgVm9jYWJ1bGFyeQ==">語彙</a>外(OOV)問題が深刻。|
 |2010年代前半|分散表現の時代|単語を高次元の疎ベクトルではなく、低次元の密ベクトル (embedding) で表現|Word2Vec (2013, Mikolovら)により、単語間の意味的類似性（king - man + woman ≈ queen）が捉えられる。|文脈による単語の意味の変化を扱えない。|
-|2010年代後半|ニューラル<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">NLP</a>の時代|<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>ベースの手法が導入された|Seq2Seq、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44Oq44Kr44Os44Oz44OI44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgUk5OIHwgUmVjdXJyZW50IE5ldXJhbCBOZXR3b3Jr">RNN</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#TFNUTSB8IExvbmcgU2hvcnQtVGVybSBNZW1vcnk=">LSTM</a>|長距離依存性に弱い。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Kqk5beu6YCG5Lyd5pKt5rOVIHwg44OQ44OD44Kv44OX44Ot44OR44Ky44O844K344On44OzIHwgQmFja3Byb3BhZ2F0aW9u">誤差逆伝播法</a>での学習で単語方向にモデルが深くなり、勾配消失もしくは勾配爆発が起きやすい。|
-|2020年代～現代|<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>の時代|<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルのパラメータ数が、数十億〜数兆規模に。GPTの導入。|Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a>社ChatGPT、Google社Gemini/Gemma、Meta社Llama、Anthropic社Claude|-|
+|2010年代後半|ニューラル<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">NLP</a>の時代|<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>ベースの手法が導入された|Seq2Seq、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44Oq44Kr44Os44Oz44OI44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgUk5OIHwgUmVjdXJyZW50IE5ldXJhbCBOZXR3b3Jr">RNN</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#TFNUTSB8IExvbmcgU2hvcnQtVGVybSBNZW1vcnk=">LSTM</a>|長距離依存性に弱い。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Kqk5beu6YCG5Lyd5pKt5rOVIHwg44OQ44OD44Kv44OX44Ot44OR44Ky44O844K344On44OzIHwgQmFja3Byb3BhZ2F0aW9u">誤差逆伝播法</a>での学習で単語方向にモデルが深くなり、勾配消失もしくは勾配爆発が起きやすい。|
+|2020年代～現代|<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>の時代|<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルのパラメータ数が、数十億〜数兆規模に。GPTの導入。|Open<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Lq65bel55+l6IO9IHwgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgfCBBSQ==">AI</a>社ChatGPT、Google社Gemini/Gemma、Meta社Llama、Anthropic社Claude|-|
 
 ## コーパス | Corpus<a id="44Kz44O844OR44K5IHwgQ29ycHVz"></a>
 
@@ -119,7 +119,7 @@
     - MeCab: IPA辞書やUniDicを利用、Viterbiアルゴリズムで最適な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#5b2i5oWL57Sg">形態素</a>列を探索。
   - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5qmf5qKw5a2m57+SIHwgTWFjaGluZSBMZWFybmluZw==">機械学習</a>ベース**
     - CRF (Conditional Random Field)、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44K144Od44O844OI44OZ44Kv44K/44O844Oe44K344OzIHwgU1ZN">SVM</a> による系列ラベリング。
-  - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>ベース**
+  - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>ベース**
     - Bi<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#TFNUTSB8IExvbmcgU2hvcnQtVGVybSBNZW1vcnk=">LSTM</a>-CRF, <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a> によるエンドツーエンド<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#5b2i5oWL57Sg6Kej5p6Q">形態素解析</a>器。
 
 ## 分かち書き | 単語分割<a id="5YiG44GL44Gh5pu444GNIHwg5Y2Y6Kqe5YiG5Ymy"></a>
@@ -130,8 +130,8 @@
 
 ## リカレントニューラルネットワーク | RNN | Recurrent Neural Network<a id="44Oq44Kr44Os44Oz44OI44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgUk5OIHwgUmVjdXJyZW50IE5ldXJhbCBOZXR3b3Jr"></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>で良く用いられる<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルの構造の1種。
-- 入力系列を1つずつ逐次的に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>に入力し、中間層の値を内部に保持していて、入力と中間層から出力を計算する。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>。このような構造により、入力系列の時間的依存関係を捉えることができる。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>で良く用いられる<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルの構造の1種。
+- 入力系列を1つずつ逐次的に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>に入力し、中間層の値を内部に保持していて、入力と中間層から出力を計算する。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>。このような構造により、入力系列の時間的依存関係を捉えることができる。
 - この特徴が、入力も出力も可変長な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>に適していたため、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>の分野で広く用いられていた。
 
 **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44Oq44Kr44Os44Oz44OI44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgUk5OIHwgUmVjdXJyZW50IE5ldXJhbCBOZXR3b3Jr">RNN</a>の課題:**
@@ -141,10 +141,18 @@
 - (引用元): <a href="https://speakerdeck.com/chokkan/20230327_riken_llm?slide=12">https://speakerdeck.com/chokkan/20230327_riken_llm?slide=12</a>
   - ![alt text](./llm.md.RNN_0.png)
 
-## エンべディング | Embedding<a id="44Ko44Oz44G544OH44Kj44Oz44KwIHwgRW1iZWRkaW5n"></a>
+## Embedding | 埋め込み<a id="RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/"></a>
 
-- 離散<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を連続値ベクトル空間へ写像する手法。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Kqe5b2ZIHwgVm9jYWJ1bGFyeQ==">語彙</a>空間のワンホットベクトルを低次元密ベクトルに変換し、意味的距離の保存を目指す。
-- 通常は入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44Ko44Oz44G544OH44Kj44Oz44KwIHwgRW1iZWRkaW5n">エンべディング</a>と位置<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44Ko44Oz44G544OH44Kj44Oz44KwIHwgRW1iZWRkaW5n">エンべディング</a>の加算で初期入力が構成される。
+- 離散的なシンボル（単語・<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>・IDなど）を実数のベクトル空間に写像する手法。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a>系の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルでは、一般的に
+  - 入力テキストを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OK44Kk44K844O844K344On44OzIHwg44OI44O844Kv44Oz5YiG5YmyIHwgVG9rZW5pemF0aW9u">トークナイゼーション</a>し、
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>列を<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">Embedding</a>し、
+  - 言語モデルの本体の処理に渡す
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">Embedding</a>の具体例な処理としては、
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Kqe5b2ZIHwgVm9jYWJ1bGFyeQ==">語彙</a>集合 $V$ と<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">埋め込み</a>次元 $d$ に対して、
+  - 行列 $E \\in \\mathbb{R}^{|V|\\times d}$ を持ち、
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>ID $i$ を $E_i$ にマッピングする。
+- 典型的には、行列Eの各要素の値は<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重みパラメータ</a>と同じ扱いで、学習処理によって決定される。
 
 ## SentencePiece<a id="U2VudGVuY2VQaWVjZQ=="></a>
 
@@ -185,6 +193,31 @@
 $$
 \\text{tf-idf}(t,d) = \\text{tf}(t,d) \\cdot \\log \\frac{N}{\\text{df}(t)} \\
 $$
+
+## Positional Encoding | 位置エンコーディング<a id="UG9zaXRpb25hbCBFbmNvZGluZyB8IOS9jee9ruOCqOODs+OCs+ODvOODh+OCo+ODs+OCsA=="></a>
+
+- **定義**: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>が系列情報を保持するために、入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">埋め込み</a>に付与する**位置情報ベクトル**。
+
+- **必要性**: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#U2VsZi1BdHRlbnRpb24=">Self-Attention</a>は入力を並列的に処理するため、**系列順序の情報が失われる**。
+
+- **種類**:
+
+  1. **固定型 (Sinusoidal <a href="https://github.com/takata150802/tech_glossary/blob/main/output/codec/video-codec.md#56ym5Y+35YyWIHwg44Ko44Oz44Kz44O844OJIHwgRW5jb2Rpbmc=">Encoding</a>, Vaswani et al. 2017)**
+
+     $$
+     PE\_{(pos,2i)} = \\sin \\left(\\frac{pos}{10000^{2i/d}}\\right),\\quad\
+     PE\_{(pos,2i+1)} = \\cos \\left(\\frac{pos}{10000^{2i/d}}\\right)
+     $$
+
+     - 周期関数により位置関係を明示的に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/codec/video-codec.md#56ym5Y+35YyWIHwg44Ko44Oz44Kz44O844OJIHwgRW5jb2Rpbmc=">符号化</a>。
+
+  1. **学習型 (Learned Positional <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">Embedding</a>)**
+
+     - 位置ごとに学習可能なベクトルを割り当てる。
+
+  1. **相対位置表現 (Relative <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#UG9zaXRpb25hbCBFbmNvZGluZyB8IOS9jee9ruOCqOODs+OCs+ODvOODh+OCo+ODs+OCsA==">Positional Encoding</a>, <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>-XL, RoPE)**
+
+     - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>間の相対距離を<a href="https://github.com/takata150802/tech_glossary/blob/main/output/codec/video-codec.md#56ym5Y+35YyWIHwg44Ko44Oz44Kz44O844OJIHwgRW5jb2Rpbmc=">符号化</a>。LLaMAやGPT-4で採用。
 
 # 参考文献
 

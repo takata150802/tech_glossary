@@ -1,5 +1,93 @@
 <!-- 記事URL:https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md# -->
 
+## 深層学習 | Deep Learning<a id="5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw=="></a>
+
+- 多層の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>を用いて**データの階層的特徴表現を学習**する<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5qmf5qKw5a2m57+SIHwgTWFjaGluZSBMZWFybmluZw==">機械学習</a>の一分野。
+
+- 人手で<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#54m55b606YePIHwgRmVhdHVyZQ==">特徴量</a>設計する手法に対し、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>は**<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#54m55b606YePIHwgRmVhdHVyZQ==">特徴量</a>抽出から予測までをエンドツーエンドで最適化**する。
+
+- 主なモデル:
+
+  - **DNN (Deep <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">Neural Network</a>)**: 全結合層の多層ネットワーク。
+  - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#55Wz44G/6L6844G/44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgQ05O">CNN</a> (Convolutional <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">Neural Network</a>)**: 画像認識、ResNet, EfficientNet。
+  - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Oq44Kr44Os44Oz44OI44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgUk5O">RNN</a> (Recurrent <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">Neural Network</a>)**: 系列データ、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-nlp.md#TFNUTSB8IExvbmcgU2hvcnQtVGVybSBNZW1vcnk=">LSTM</a>, GRU。
+  - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>**: 自己注意機構による並列処理。GPT, <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#QkVSVCB8IEJpZGlyZWN0aW9uYWwgRW5jb2RlciBSZXByZXNlbnRhdGlvbnMgZnJvbSBUcmFuc2Zvcm1lcnM=">BERT</a>, ViT。
+
+- 応用分野:
+
+  - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">自然言語処理</a> (<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Ieq54S26KiA6Kqe5Yem55CGIHwgTkxQIHwgTmF0dXJhbCBMYW5ndWFnZSBQcm9jZXNzaW5n">NLP</a>)**: 機械翻訳、要約、対話（<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>）。
+  - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#44Kz44Oz44OU44Ol44O844K/44OT44K444On44OzIHwgQ29tcHV0ZXIgVmlzaW9uIHwgQ1Y=">コンピュータビジョン</a> (<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#44Kz44Oz44OU44Ol44O844K/44OT44K444On44OzIHwgQ29tcHV0ZXIgVmlzaW9uIHwgQ1Y=">CV</a>)**: 画像<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#54mp5L2T5qSc5Ye6IHwgT2JqZWN0IERldGVjdGlvbg==">物体検出</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#44K744Kw44Oh44Oz44OG44O844K344On44OzIHwgU2VnbWVudGF0aW9u">セグメンテーション</a>。
+  - **音声処理**: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Z+z5aOw6KqN6K2YIHwgQXV0b21hdGljIFNwZWVjaCBSZWNvZ25pdGlvbiB8IEFTUg==">音声認識</a>、音声合成。
+  - **マルチモーダル**: CLIP, GPT-4V などでテキスト＋画像＋音声の統合。
+  - **科学・工学**: 蛋白質構造予測 (AlphaFold)、自動運転、HPC最適化。
+
+## ニューラルネットワーク | Neural Network<a id="44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms="></a>
+
+- 人間の脳神経回路に着想を得て設計された非線形関数近似モデルで、複雑なパターン認識や関数近似を行う。
+
+- 以下の式で表せる**層**を積み重ねた構造になっていて、ある層の出力が次の層への入力となる。
+
+  $$
+  h^{(l)} = f\\left(W^{(l)} h^{(l-1)} + b^{(l)}\\right)
+  $$
+
+  - $h^{(l)}$: 層 $l$ の出力
+  - $W^{(l)}$: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重み</a>行列
+  - $b^{(l)}$: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44OQ44Kk44Ki44K5IHwgQmlhcw==">バイアス</a>
+  - $f$: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rS75oCn5YyW6Zai5pWwIHwg5Lyd6YGU6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg==">活性化関数</a>（ReLU, GELU, etc.）
+
+- 従来の統計学的手法 単<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Zue5biwIHwgUmVncmVzc2lvbg==">回帰</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6YeN5Zue5biwIHwgTXVsdGlwbGUgUmVncmVzc2lvbg==">重回帰</a>、線形<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>モデルは、一つの層から構成される<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>、すなわち単層<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>（single-layer neural network）と見なすことができる。これらは、線形分離可能な問題しか扱えない。
+
+- 一方で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>には万能近似能力がある。
+
+  - 二層以上の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>で、
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rS75oCn5YyW6Zai5pWwIHwg5Lyd6YGU6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg==">活性化関数</a>が非線形で、
+  - 中間層(=1層目の出力 すなわち2層目の入力)の次元が無限で、
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>が無限にあれば、
+  - どんな関数でも近似できるというもの。
+
+- (参考):
+
+  - https://ibis.t.u-tokyo.ac.jp/suzuki/lecture/2020/intensive2/Kyusyu_2020_Deep.pdf
+  - https://chokkan.github.io/mlnote/classification/03nn.html
+
+## 活性化関数 | 伝達関数 | Activation Function<a id="5rS75oCn5YyW6Zai5pWwIHwg5Lyd6YGU6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg=="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>を構成要素の1つ。
+  - 典型的には、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>は複数の層から構成されており、
+  - ある層の出力が次の層への入力となっていて、
+  - ある層の出力は、
+    - ある層の入力xに対し**線形変換** (<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重み</a>付き和 + <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44OQ44Kk44Ki44K5IHwgQmlhcw==">バイアス</a>) した後に、
+    - **非線形関数**を通したものとして計算される。この非線形関数を<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rS75oCn5YyW6Zai5pWwIHwg5Lyd6YGU6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg==">活性化関数</a>をと呼ぶ。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rS75oCn5YyW6Zai5pWwIHwg5Lyd6YGU6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg==">活性化関数</a>には、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>が線形分離可能でない問題を扱えるようにするという重要の役割がある(→詳細は<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>の節を参照)。
+
+* **具体例**:
+  1. **Sigmoid**
+     $\\sigma(x)=\\frac{1}{1+e^{-x}}$
+
+     - 範囲 (0,1)。古典的。勾配消失が起きやすい。
+
+  1. **tanh**
+     $\\tanh(x)=\\frac{e^x-e^{-x}}{e^x+e^{-x}}$
+
+     - 範囲 (-1,1)。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Oq44Kr44Os44Oz44OI44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgUk5O">RNN</a>で利用。
+
+  1. **ReLU (Rectified Linear Unit)**
+     $f(x)=\\max(0,x)$
+
+     - 現代の標準。計算効率が高い。
+     - 問題: **死んだReLU**（勾配ゼロ化）。
+
+  1. **GELU (Gaussian Error Linear Unit)**
+     $f(x)=x\\cdot \\Phi(x)$ （$\\Phi$ は標準正規分布のCDF）
+
+     - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>系モデル（<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#QkVSVCB8IEJpZGlyZWN0aW9uYWwgRW5jb2RlciBSZXByZXNlbnRhdGlvbnMgZnJvbSBUcmFuc2Zvcm1lcnM=">BERT</a>, GPT）で採用。ReLUより滑らか。
+
+  1. **SiLU/Swish**
+     $f(x)=x \\cdot \\sigma(x)$
+
+     - GPT-4, PaLM などで利用。
+
 ## 重み | 重みパラメータ | Weight | Weight Parameter<a id="6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg=="></a>
 
 - モデル内部で学習される<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重み</a>および<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44OQ44Kk44Ki44K5IHwgQmlhcw==">バイアス</a>で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6Kqk5beu6YCG5Lyd5pKt5rOVIHwg44OQ44OD44Kv44OX44Ot44OR44Ky44O844K344On44OzIHwgQmFja3Byb3BhZ2F0aW9u">誤差逆伝播法</a>で最適化される対象。
@@ -30,7 +118,7 @@
 
 ## ドロップアウト | Dropout<a id="44OJ44Ot44OD44OX44Ki44Km44OIIHwgRHJvcG91dA=="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>防止のために、学習時ランダムにユニットを無効化する正則化手法。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>防止のために、学習時ランダムにユニットを無効化する正則化手法。
 
 ## ハイパーパラメータ | Hyperparameter<a id="44OP44Kk44OR44O844OR44Op44Oh44O844K/IHwgSHlwZXJwYXJhbWV0ZXI="></a>
 
@@ -46,11 +134,11 @@
 
 ## 勾配消失問題 | Vanishing Gradient Problem<a id="5Yu+6YWN5raI5aSx5ZWP6aGMIHwgVmFuaXNoaW5nIEdyYWRpZW50IFByb2JsZW0="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#5rS75oCn5YyW6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg==">活性化関数</a>や深い層の影響で勾配が消失し、学習が進行しなくなる現象。ReLUや残差接続で緩和可能。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rS75oCn5YyW6Zai5pWwIHwg5Lyd6YGU6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg==">活性化関数</a>や深い層の影響で勾配が消失し、学習が進行しなくなる現象。ReLUや残差接続で緩和可能。
 
 ## 変分オートエンコーダー | VAE<a id="5aSJ5YiG44Kq44O844OI44Ko44Oz44Kz44O844OA44O8IHwgVkFF"></a>
 
-- 潜在変数モデルを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-overview.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>で構成し、ELBOの最小化により訓練される生成モデル。
+- 潜在変数モデルを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>で構成し、ELBOの最小化により訓練される生成モデル。
 
 ## 拡散モデル | Diffusion Model<a id="5ouh5pWj44Oi44OH44OrIHwgRGlmZnVzaW9uIE1vZGVs"></a>
 
@@ -103,4 +191,4 @@
     \\cos(u,v) = \\frac{u \\cdot v}{|u||v|}
     $$
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#VEYtSURGIHwgVGVybSBGcmVxdWVuY3nigJNJbnZlcnNlIERvY3VtZW50IEZyZXF1ZW5jeQ==">TF-IDF</a>や<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#d29yZDJ2ZWM=">word2vec</a>などの手法である文章をベクトル化した結果(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44Ko44Oz44G544OH44Kj44Oz44KwIHwgRW1iZWRkaW5n">Embedding</a>)の比較に用いられる。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#VEYtSURGIHwgVGVybSBGcmVxdWVuY3nigJNJbnZlcnNlIERvY3VtZW50IEZyZXF1ZW5jeQ==">TF-IDF</a>や<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#d29yZDJ2ZWM=">word2vec</a>などの手法である文章をベクトル化した結果(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">Embedding</a>)の比較に用いられる。

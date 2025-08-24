@@ -6,7 +6,7 @@
 
 ## Prompt Injection<a id="UHJvbXB0IEluamVjdGlvbg=="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OX44Ot44Oz44OX44OIIHwgUHJvbXB0">プロンプト</a>内に意図的な命令を埋め込み、モデルの出力意図的に改変させる攻撃手法。セキュリティリスクの一種。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OX44Ot44Oz44OX44OIIHwgUHJvbXB0">プロンプト</a>内に意図的な命令を<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">埋め込み</a>、モデルの出力意図的に改変させる攻撃手法。セキュリティリスクの一種。
 
 ## アライメント | Alignment<a id="44Ki44Op44Kk44Oh44Oz44OIIHwgQWxpZ25tZW50"></a>
 
