@@ -171,10 +171,6 @@ $$
 
 - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>全体を1回通して学習するサイクル。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>回避のため早期終了と併用。
 
-## ハイパーパラメータ | Hyperparameter<a id="44OP44Kk44OR44O844OR44Op44Oh44O844K/IHwgSHlwZXJwYXJhbWV0ZXI="></a>
-
-- 訓練前に設定する調整変数で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OQ44OD44OB44K144Kk44K6IHwgQmF0Y2ggU2l6ZQ==">バッチサイズ</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5a2m57+S546HIHwgTGVhcm5pbmcgUmF0ZQ==">学習率</a>、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#RHJvcG91dCB8IOODieODreODg+ODl+OCouOCpuODiA==">ドロップアウト</a>率などが含まれる。
-
 ## バッチサイズ | Batch Size<a id="44OQ44OD44OB44K144Kk44K6IHwgQmF0Y2ggU2l6ZQ=="></a>
 
 - 1回のパラメータ更新に使うサンプル数。メモリ使用と学習安定性に影響。
@@ -243,3 +239,17 @@ $$
     $$
 
 - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#VEYtSURGIHwgVGVybSBGcmVxdWVuY3nigJNJbnZlcnNlIERvY3VtZW50IEZyZXF1ZW5jeQ==">TF-IDF</a>や<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#d29yZDJ2ZWM=">word2vec</a>などの手法である文章をベクトル化した結果(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">Embedding</a>)の比較に用いられる。
+
+## ハイパーパラメータ | Hyperparameter<a id="44OP44Kk44OR44O844OR44Op44Oh44O844K/IHwgSHlwZXJwYXJhbWV0ZXI="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5qmf5qKw5a2m57+SIHwgTWFjaGluZSBMZWFybmluZw==">機械学習</a>の分野(=<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>を含む)で使われる用語で、主に**モデルの学習過程の設定パラメータ**を指す。
+- **モデルの構造をとある設定パラメータで若干調整できるようにしている場合にそのパラメータ**も含めて<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OP44Kk44OR44O844OR44Op44Oh44O844K/IHwgSHlwZXJwYXJhbWV0ZXI=">ハイパーパラメータ</a>と呼ぶこともある。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>から直接学習されるのではなく、人間が事前に設定する。
+- 具体例:
+  1. **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5a2m57+S546HIHwgTGVhcm5pbmcgUmF0ZQ==">学習率</a> (<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5a2m57+S546HIHwgTGVhcm5pbmcgUmF0ZQ==">Learning Rate</a>)**
+  1. **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OQ44OD44OB44K144Kk44K6IHwgQmF0Y2ggU2l6ZQ==">バッチサイズ</a> (<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OQ44OD44OB44K144Kk44K6IHwgQmF0Y2ggU2l6ZQ==">Batch Size</a>)**
+  1. **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Ko44Od44OD44KvIHwgRXBvY2g=">エポック</a>数 (<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Ko44Od44OD44KvIHwgRXBvY2g=">Epoch</a>s)**
+  1. **モデル構造**
+  1. **正則化パラメータ**
+  1. **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#T3B0aW1pemVyIHwg5pyA6YGp5YyW5omL5rOV">Optimizer</a>の設定**
+  1. **ランダムシード**

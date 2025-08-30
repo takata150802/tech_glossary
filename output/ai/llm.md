@@ -68,6 +68,24 @@
 
   - ![alt text](./llm.md.Transformer_0.png)
 
+## パープレキシティ | Perplexity | 困惑度<a id="44OR44O844OX44Os44Kt44K344OG44KjIHwgUGVycGxleGl0eSB8IOWbsOaDkeW6pg=="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>の分野では、**予測精度の指標の1つ**を指し、最もメジャーな指標。
+  - ただし **人間との対話品質**や**事実性**を完全には評価できないため、最近は **MT-Bench, AlpacaEval, Chatbot Arena** などの人間評価指標と併用される。
+- **ある入力文に対する正解の出力文を**どれだけ「**困惑せずに**」**予測できるか**を示す。
+- 直感的には、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>が**次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を予測するときに**「**平均して何通りの選択肢に迷っているか**」を表す。
+  - 厳密には、**次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>の予測に平均してどれくらいのエントロピー/不確かさがあるか**?を表す。
+- **1以上無限大の値を取り、低いほど予測精度が高い良いモデル**。
+- 下記数式で定義される。**交差エントロピー誤差のexponentialを取ったものに**等しい。
+  - つまり、交差エントロピー誤差は<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の学習の目的関数と良く用いられ、**学習処理中は学習の進捗状況を表す指標**として、**学習処理後はモデルの良し悪しを表す指標**として用いられるのだが、**<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OR44O844OX44Os44Kt44K344OG44KjIHwgUGVycGxleGl0eSB8IOWbsOaDkeW6pg==">パープレキシティ</a>とは単にそのexponentialを取ったものに過ぎない**。
+
+$$
+\\text{PPL}(x\_{1:T}) = \\exp\\left(-\\frac{1}{T}\\sum\_{t=1}^T \\log p\_\\theta(x_t \\mid x\_{\\lt t})\\right)
+$$
+
+- $T$: シーケンス長
+- $p\_\\theta(x_t \\mid x\_{\<t})$: モデルが次<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a> $x_t$ を予測する確率
+
 ## 推論 | Inference<a id="5o6o6KuWIHwgSW5mZXJlbmNl"></a>
 
 - 学習済みモデルに対して<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OX44Ot44Oz44OX44OIIHwgUHJvbXB0">プロンプト</a>を与え、次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>またはテキスト全体を生成させる処理。
