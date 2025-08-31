@@ -77,35 +77,89 @@ $$
 * $T$: シーケンス長
 * $p_\theta(x_t \mid x_{<t})$: モデルが次トークン $x_t$ を予測する確率
 
-## 推論 | Inference	
-- 学習済みモデルに対してプロンプトを与え、次のトークンまたはテキスト全体を生成させる処理。
+## 推論 | Inference
+- 学習済みモデルを使って、新しい入力に対して出力を生成する処理。
+- 大規模言語モデルの分野では、プロンプトを入力に、以下のいずれかを行うことを指す:
+  1. 次の1トークンを生成する。
+  2. 出力されたトークンを入力プロンプトの末尾に加え、再度次のトークンを生成し、<EOS>が出力されるまで繰り返すテキスト生成。
+- 大規模言語モデルの推論の設定パラメータ:
+  - 温度 | Temperature
+  - Top-k / Top-p 
+  - Max tokens
 
 ## プロンプト | Prompt
-- モデルへの入力文。コンテキストや命令、質問などを含むことが多く、Zero-shotやFew-shotにも活用される。
+- モデルに与える入力テキスト。タスク指示、質問、文脈、例などを含む。
 
 ## デコーダー | Decoder
-- Transformerにおける出力生成側のネットワーク構造で、自己回帰的にトークンを予測する。
+- シーケンス生成モデルにおける出力系列を逐次生成するモジュール。
+- TransformerベースのLLMは、**Encoder-Decoder型**（例: T5）と **Decoder-only型**（例: GPT）に分かれる。
 
-## RMSNorm | LayerNorm
-- 各レイヤーにおいて出力のスケーリングを正規化し勾配の安定性を高めるテクニック。
+## RMSNorm | Root Mean Square Normalization
 
-## 自己回帰 | Autoregressive
-- 入力の過去のトークンを使って次のトークンを逐次生成するモデル構造。GPT系列などが該当。
+- Llama系列のLLMでも採用されている正規化層の1つ。
+- Attention is all you needのTransformerで使われていたLayer Normalizationの改良。
+  - 分散ではなく二乗平均平方根 (RMS) のみで正規化。
+  - xの平均を求める必要がない分、計算量が少ない。
+
+$$
+\text{RMSNorm}(x) = \frac{x}{\text{RMS}(x)} \cdot g,
+\text{where} \text{RMS}(x) = \sqrt{\frac{1}{d}\sum_{i=1}^d x_i^2 + \epsilon}
+$$
+
+* $d$: 次元数
+* $g$: 学習可能スケーリング係数
+
+- (引用元): <a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.normalization.RMSNorm.html">https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.normalization.RMSNorm.html</a>
 
 ## コンテキスト長 | Context Length | Context Window
-- モデルが一度に処理可能な最大トークン数。大きいほど長文処理能力が向上するが、アテンションの計算量が増大する。
+- モデルが一度に処理できる**入力トークン列の最大長**。
+- LLMの計算量は**コンテキスト長nのとき**$O(n^2)$に比例。
+- コンテキスト長が長いほど、長文の理解や生成が可能になるが、計算コストも増大する。
 
-## Temperature
-- モデルの出力の多様性を制御するパラメータ。高い値（例：1.0）は多様な応答を生成し、低い値（例：0.2）はより決定的な応答を生成する。
-- 例：ChatGPTの温度パラメータを調整することで、よりクリエイティブな応答や、より一貫性のある応答を生成することができる。
+## 自己回帰 | Autoregression
+- 過去のトークン系列 $x_{1:t}$ を条件に、次のトークン $x_{t+1}$ を逐次予測する生成方式。
+
+$$
+p(x_{1:T}) = \prod_{t=1}^{T} p(x_t \mid x_{\lt t})
+$$
+
+## Temperature | 温度パラメータ | 温度
+- サンプリング分布のシャープさを制御するパラメータ。
+- 対話の創造性・一貫性の調整する。
+  - Tが大きいほど多様な応答が生成される。
+  - Tが小さいほど決定的な応答が生成される。
+
+$$
+p'(x) = \frac{\exp(\log p(x) / T)}{\sum_j \exp(\log p(x_j) / T)}
+$$
 
 ## FlashAttention
-- アテンション計算をメモリアクセス最適化により高速化したアルゴリズム。Transformerのスケーラビリティを改善。
+- Self-Attentionを**メモリ効率よくGPUで計算**するアルゴリズム。
+  - 行列演算でTilingして(=演算処理を小ブロックに分けて)、メモリアクセス局所性を高めるのと同じように、
+  - Softmax演算も工夫してTilingを行っている。
+- (参考): GPU と FlashAttension をちゃんと理解したい｜uchiiii <a href="https://zenn.dev/uchiiii/articles/306d0bb7ef67a7">https://zenn.dev/uchiiii/articles/306d0bb7ef67a7</a> 
 
-## Mixture of Experts | MoE
-- 複数のサブネットワーク（専門家）を用意し、入力ごとに一部のみを動かすことで、計算量を抑えつつモデルの能力を拡張。
+## Mixture of Experts (MoE)
+- LLMのネットワークアーキテクチャの一種。
+- 複数の専門家ネットワーク（Expert）を用意し、入力ごとに一部のみを動的に活性化させる。
+- 追加のコストを抑えつつLLMのパラメータ総数を増やすための工夫。
+- メリット:
+  - 計算効率の改善。パラメータ÷{学習/推論に必要な計算量}を低減できる。
+- デメリット:
+  - 学習の安定性。学習中、活性化されるExpertが偏ると上手く学習できない。
 
-## Sparse Transformer
-- 全トークン間のアテンションではなく、一部の接続のみ有効にすることで、計算量とメモリ使用を削減したTransformerの変種。
-## Self-Attention
-- 入力系列内の全トークンペアに対し、クエリ（Q）、キー（K）、バリュー（V）の内積スコアをSoftmax正規化して加重和を取るアテンション機構。Transformerの基盤であり、長距離依存関係の獲得に寄与する。
+## Self-Attention | 自己注意機構
+- 入力トークン列内の各トークン同士が相互に関連度を計算し、重み付き和を取る機構。
+
+$$
+\text{Self-Atten}(Q,K,V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+, \text{where } Q=W_Qx, K=W_Kx, V=W_Vx
+$$
+
+* $n$: コンテキスト長
+* $d_k$: モデルの次元数
+* $x$: 入力トークン列(サイズ: $n \times d_k$)
+* $Q$: Query行列(サイズ:$n \times d_k$), $W_{Q}x$で計算される
+* $K$: Key行列(サイズ:$n \times d_k$), $W_{K}x$で計算される
+* $V$: Value行列(サイズ:$n \times d_k$), $W_{K}x$で計算される
+* $QK^\top$: Attention行列(サイズ:$n \times n$)

@@ -88,45 +88,96 @@ $$
 
 ## 推論 | Inference<a id="5o6o6KuWIHwgSW5mZXJlbmNl"></a>
 
-- 学習済みモデルに対して<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OX44Ot44Oz44OX44OIIHwgUHJvbXB0">プロンプト</a>を与え、次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>またはテキスト全体を生成させる処理。
+- 学習済みモデルを使って、新しい入力に対して出力を生成する処理。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>の分野では、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OX44Ot44Oz44OX44OIIHwgUHJvbXB0">プロンプト</a>を入力に、以下のいずれかを行うことを指す:
+  1. 次の1<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を生成する。
+  1. 出力された<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OX44Ot44Oz44OX44OIIHwgUHJvbXB0">プロンプト</a>の末尾に加え、再度次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を生成し、<EOS>が出力されるまで繰り返すテキスト生成。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>の設定パラメータ:
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#VGVtcGVyYXR1cmUgfCDmuKnluqbjg5Hjg6njg6Hjg7zjgr8gfCDmuKnluqY=">温度</a> | <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#VGVtcGVyYXR1cmUgfCDmuKnluqbjg5Hjg6njg6Hjg7zjgr8gfCDmuKnluqY=">Temperature</a>
+  - Top-k / Top-p
+  - Max tokens
 
 ## プロンプト | Prompt<a id="44OX44Ot44Oz44OX44OIIHwgUHJvbXB0"></a>
 
-- モデルへの入力文。コンテキストや命令、質問などを含むことが多く、Zero-shotやFew-shotにも活用される。
+- モデルに与える入力テキスト。タスク指示、質問、文脈、例などを含む。
 
 ## デコーダー | Decoder<a id="44OH44Kz44O844OA44O8IHwgRGVjb2Rlcg=="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>における出力生成側のネットワーク構造で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#6Ieq5bex5Zue5biwIHwgQXV0b3JlZ3Jlc3NpdmU=">自己回帰</a>的に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を予測する。
+- シーケンス生成モデルにおける出力系列を逐次生成するモジュール。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>ベースの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>は、**Encoder-<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OH44Kz44O844OA44O8IHwgRGVjb2Rlcg==">Decoder</a>型**（例: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-dl-llm.md#VDUgfCBUZXh0LVRvLVRleHQgVHJhbnNmZXIgVHJhbnNmb3JtZXI=">T5</a>）と **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OH44Kz44O844OA44O8IHwgRGVjb2Rlcg==">Decoder</a>-only型**（例: GPT）に分かれる。
 
-## RMSNorm | LayerNorm<a id="Uk1TTm9ybSB8IExheWVyTm9ybQ=="></a>
+## RMSNorm | Root Mean Square Normalization<a id="Uk1TTm9ybSB8IFJvb3QgTWVhbiBTcXVhcmUgTm9ybWFsaXphdGlvbg=="></a>
 
-- 各レイヤーにおいて出力のスケーリングを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5q2j6KaP5YyWIHwgUmVndWxhcml6YXRpb24=">正規化</a>し勾配の安定性を高めるテクニック。
+- Llama系列の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>でも採用されている<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5q2j6KaP5YyWIHwgUmVndWxhcml6YXRpb24=">正規化</a>層の1つ。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#QXR0ZW50aW9uIGlzIGFsbCB5b3UgbmVlZA==">Attention is all you need</a>の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>で使われていたLayer <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ml-overview.md#5q2j6KaP5YyWIHwgTm9ybWFsaXphdGlvbg==">Normalization</a>の改良。
+  - 分散ではなく二乗平均平方根 (RMS) のみで<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5q2j6KaP5YyWIHwgUmVndWxhcml6YXRpb24=">正規化</a>。
+  - xの平均を求める必要がない分、計算量が少ない。
 
-## 自己回帰 | Autoregressive<a id="6Ieq5bex5Zue5biwIHwgQXV0b3JlZ3Jlc3NpdmU="></a>
+$$
+\\text{<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#Uk1TTm9ybSB8IFJvb3QgTWVhbiBTcXVhcmUgTm9ybWFsaXphdGlvbg==">RMSNorm</a>}(x) = \\frac{x}{\\text{RMS}(x)} \\cdot g,
+\\text{where} \\text{RMS}(x) = \\sqrt{\\frac{1}{d}\\sum\_{i=1}^d x_i^2 + \\epsilon}
+$$
 
-- 入力の過去の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を使って次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>を逐次生成するモデル構造。GPT系列などが該当。
+- $d$: 次元数
+- $g$: 学習可能スケーリング係数
+
+* (引用元): <a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.normalization.RMSNorm.html">https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.normalization.RMSNorm.html</a>
 
 ## コンテキスト長 | Context Length | Context Window<a id="44Kz44Oz44OG44Kt44K544OI6ZW3IHwgQ29udGV4dCBMZW5ndGggfCBDb250ZXh0IFdpbmRvdw=="></a>
 
-- モデルが一度に処理可能な最大<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>数。大きいほど長文処理能力が向上するが、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">アテンション</a>の計算量が増大する。
+- モデルが一度に処理できる**入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>列の最大長**。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>の計算量は**<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Kz44Oz44OG44Kt44K544OI6ZW3IHwgQ29udGV4dCBMZW5ndGggfCBDb250ZXh0IFdpbmRvdw==">コンテキスト長</a>nのとき**$O(n^2)$に比例。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Kz44Oz44OG44Kt44K544OI6ZW3IHwgQ29udGV4dCBMZW5ndGggfCBDb250ZXh0IFdpbmRvdw==">コンテキスト長</a>が長いほど、長文の理解や生成が可能になるが、計算コストも増大する。
 
-## Temperature<a id="VGVtcGVyYXR1cmU="></a>
+## 自己回帰 | Autoregression<a id="6Ieq5bex5Zue5biwIHwgQXV0b3JlZ3Jlc3Npb24="></a>
 
-- モデルの出力の多様性を制御するパラメータ。高い値（例：1.0）は多様な応答を生成し、低い値（例：0.2）はより決定的な応答を生成する。
-- 例：ChatGPTの温度パラメータを調整することで、よりクリエイティブな応答や、より一貫性のある応答を生成することができる。
+- 過去の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>系列 $x\_{1:t}$ を条件に、次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a> $x\_{t+1}$ を逐次予測する生成方式。
+
+$$
+p(x\_{1:T}) = \\prod\_{t=1}^{T} p(x_t \\mid x\_{\\lt t})
+$$
+
+## Temperature | 温度パラメータ | 温度<a id="VGVtcGVyYXR1cmUgfCDmuKnluqbjg5Hjg6njg6Hjg7zjgr8gfCDmuKnluqY="></a>
+
+- サンプリング分布のシャープさを制御するパラメータ。
+- 対話の創造性・一貫性の調整する。
+  - Tが大きいほど多様な応答が生成される。
+  - Tが小さいほど決定的な応答が生成される。
+
+$$
+p'(x) = \\frac{\\exp(\\log p(x) / T)}{\\sum_j \\exp(\\log p(x_j) / T)}
+$$
 
 ## FlashAttention<a id="Rmxhc2hBdHRlbnRpb24="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">アテンション</a>計算をメモリアクセス最適化により高速化したアルゴリズム。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>のスケーラビリティを改善。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#U2VsZi1BdHRlbnRpb24gfCDoh6rlt7Hms6jmhI/mqZ/mp4s=">Self-Attention</a>を**メモリ効率よくGPUで計算**するアルゴリズム。
+  - 行列演算でTilingして(=演算処理を小ブロックに分けて)、メモリアクセス局所性を高めるのと同じように、
+  - Softmax演算も工夫してTilingを行っている。
+- (参考): GPU と FlashAttension をちゃんと理解したい｜uchiiii <a href="https://zenn.dev/uchiiii/articles/306d0bb7ef67a7">https://zenn.dev/uchiiii/articles/306d0bb7ef67a7</a>
 
-## Mixture of Experts | MoE<a id="TWl4dHVyZSBvZiBFeHBlcnRzIHwgTW9F"></a>
+## Mixture of Experts (MoE)<a id="TWl4dHVyZSBvZiBFeHBlcnRzIChNb0Up"></a>
 
-- 複数のサブネットワーク（専門家）を用意し、入力ごとに一部のみを動かすことで、計算量を抑えつつモデルの能力を拡張。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のネットワークアーキテクチャの一種。
+- 複数の専門家ネットワーク（Expert）を用意し、入力ごとに一部のみを動的に活性化させる。
+- 追加のコストを抑えつつ<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">LLM</a>のパラメータ総数を増やすための工夫。
+- メリット:
+  - 計算効率の改善。パラメータ÷{学習/<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>に必要な計算量}を低減できる。
+- デメリット:
+  - 学習の安定性。学習中、活性化されるExpertが偏ると上手く学習できない。
 
-## Sparse Transformer<a id="U3BhcnNlIFRyYW5zZm9ybWVy"></a>
+## Self-Attention | 自己注意機構<a id="U2VsZi1BdHRlbnRpb24gfCDoh6rlt7Hms6jmhI/mqZ/mp4s="></a>
 
-- 全<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>間の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">アテンション</a>ではなく、一部の接続のみ有効にすることで、計算量とメモリ使用を削減した<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>の変種。
+- 入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>列内の各<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>同士が相互に関連度を計算し、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重み</a>付き和を取る機構。
 
-## Self-Attention<a id="U2VsZi1BdHRlbnRpb24="></a>
+$$
+\\text{Self-Atten}(Q,K,V) = \\text{softmax}\\left(\\frac{QK^\\top}{\\sqrt{d_k}}\\right)V
+, \\text{where } Q=W_Qx, K=W_Kx, V=W_Vx
+$$
 
-- 入力系列内の全<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>ペアに対し、クエリ（Q）、キー（K）、バリュー（V）の内積スコアをSoftmax<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5q2j6KaP5YyWIHwgUmVndWxhcml6YXRpb24=">正規化</a>して加重和を取る<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">アテンション機構</a>。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>の基盤であり、長距離依存関係の獲得に寄与する。
+- $n$: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Kz44Oz44OG44Kt44K544OI6ZW3IHwgQ29udGV4dCBMZW5ndGggfCBDb250ZXh0IFdpbmRvdw==">コンテキスト長</a>
+- $d_k$: モデルの次元数
+- $x$: 入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>列(サイズ: $n \\times d_k$)
+- $Q$: Query行列(サイズ:$n \\times d_k$), $W\_{Q}x$で計算される
+- $K$: Key行列(サイズ:$n \\times d_k$), $W\_{K}x$で計算される
+- $V$: Value行列(サイズ:$n \\times d_k$), $W\_{K}x$で計算される
+- $QK^\\top$: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44Ki44OG44Oz44K344On44OzIHwg44Ki44OG44Oz44K344On44Oz5qmf5qeLIHwgQXR0ZW50aW9uIHwgQXR0ZW50aW9uIG1lY2hhbmlzbQ==">Attention</a>行列(サイズ:$n \\times n$)

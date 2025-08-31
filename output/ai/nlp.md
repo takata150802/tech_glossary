@@ -198,7 +198,7 @@ $$
 
 - **定義**: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#44OI44Op44Oz44K544OV44Kp44O844Oe44O8IHwgVHJhbnNmb3JtZXI=">Transformer</a>が系列情報を保持するために、入力<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#RW1iZWRkaW5nIHwg5Z+L44KB6L6844G/">埋め込み</a>に付与する**位置情報ベクトル**。
 
-- **必要性**: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#U2VsZi1BdHRlbnRpb24=">Self-Attention</a>は入力を並列的に処理するため、**系列順序の情報が失われる**。
+- **必要性**: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#U2VsZi1BdHRlbnRpb24gfCDoh6rlt7Hms6jmhI/mqZ/mp4s=">Self-Attention</a>は入力を並列的に処理するため、**系列順序の情報が失われる**。
 
 - **種類**:
 
