@@ -86,7 +86,7 @@
 
 ## 訓練データ | Training Data<a id="6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ=="></a>
 
-- モデルのパラメータ最適化に使用されるデータセット。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg==">交差検証</a>による分割が一般的。
+- モデルのパラメータ最適化に使用されるデータセット。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg==">交差検証</a>による分割が一般的。
 
 ## 訓練誤差 | Training Error<a id="6KiT57e06Kqk5beuIHwgVHJhaW5pbmcgRXJyb3I="></a>
 
@@ -94,7 +94,7 @@
 
 ## 汎化誤差 | Generalization Error<a id="5rGO5YyW6Kqk5beuIHwgR2VuZXJhbGl6YXRpb24gRXJyb3I="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>外の新規入力に対する誤差。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg==">交差検証</a>や正則化で抑制。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>外の新規入力に対する誤差。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg==">交差検証</a>や正則化で抑制。
 
 ## F値 | F1 Score<a id="RuWApCB8IEYxIFNjb3Jl"></a>
 
@@ -106,7 +106,7 @@
 
 ## 交検証 | Cross Validation<a id="5Lqk5qSc6Ki8IHwgQ3Jvc3MgVmFsaWRhdGlvbg=="></a>
 
-- データを複数分割し、訓練と検証を繰り返すことでモデルの汎化性能を推定する手法。
+- データを複数分割し、訓練と検証を繰り返すことでモデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rGO5YyW5oCn6IO9IHwgR2VuZXJhbGl6YXRpb24gUGVyZm9ybWFuY2U=">汎化性能</a>を推定する手法。
 
 ## 再現率 | Recall<a id="5YaN54++546HIHwgUmVjYWxs"></a>
 
@@ -242,7 +242,7 @@ X^TX\theta &= X^TY \\
 
 ## 標本誤差 | Sampling Error<a id="5qiZ5pys6Kqk5beuIHwgU2FtcGxpbmcgRXJyb3I="></a>
 
-- 母集団と標本の間で推定値が異なる誤差。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg==">交差検証</a>で統計的に評価可能。
+- 母集団と標本の間で推定値が異なる誤差。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg==">交差検証</a>で統計的に評価可能。
 
 ## 標準化 | Standardization<a id="5qiZ5rqW5YyWIHwgU3RhbmRhcmRpemF0aW9u"></a>
 

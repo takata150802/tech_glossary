@@ -145,7 +145,7 @@ $$
 ## Dropout | ドロップアウト<a id="RHJvcG91dCB8IOODieODreODg+ODl+OCouOCpuODiA=="></a>
 
 - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OL44Ol44O844Op44Or44ON44OD44OI44Ov44O844KvIHwgTmV1cmFsIE5ldHdvcms=">ニューラルネットワーク</a>の学習中に、ある層の出力yの各要素について確率 $p$ でニューロンを無効化する正則化手法。
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a> (overfitting) を防ぎ、汎化性能を向上する効果がある。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a> (overfitting) を防ぎ、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rGO5YyW5oCn6IO9IHwgR2VuZXJhbGl6YXRpb24gUGVyZm9ybWFuY2U=">汎化性能</a>を向上する効果がある。
 - 学習中だけ適用され、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5o6o6KuWIHwgSW5mZXJlbmNl">推論</a>時には<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#RHJvcG91dCB8IOODieODreODg+ODl+OCouOCpuODiA==">ドロップアウト</a>は無効化される。
 
 $$
@@ -169,7 +169,7 @@ $$
 
 ## エポック | Epoch<a id="44Ko44Od44OD44KvIHwgRXBvY2g="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>全体を1回通して学習するサイクル。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>回避のため早期終了と併用。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>全体を1回通して学習するサイクル。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>回避のため<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#RWFybHkgU3RvcHBpbmcgfCDml6nmnJ/ntYLkuoY=">早期終了</a>と併用。
 
 ## バッチサイズ | Batch Size<a id="44OQ44OD44OB44K144Kk44K6IHwgQmF0Y2ggU2l6ZQ=="></a>
 
@@ -193,7 +193,16 @@ $$
 
 ## 損失関数 | Loss Function<a id="5pCN5aSx6Zai5pWwIHwgTG9zcyBGdW5jdGlvbg=="></a>
 
-- モデル出力と教師信号との誤差を数値化する指標で、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5Yu+6YWN6ZmN5LiL5rOVIHwgR3JhZGllbnQgRGVzY2VudA==">勾配降下法</a>の最小化対象。代表例にクロスエントロピーやMSE。
+- モデルの予測と正解ラベルの「誤差」を定量化する関数。
+- **学習の目的**となる。すなわち、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5Yu+6YWN6ZmN5LiL5rOVIHwgR3JhZGllbnQgRGVzY2VudA==">勾配降下法</a>の最小化対象。
+- 具体例：
+  1. **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>タスク**: Cross-Entropy 損失
+     $$
+     L = -\\sum\_{i} y_i \\log p\_\\theta(y_i \\mid x)
+     $$
+     - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm.md#5aSn6KaP5qih6KiA6Kqe44Oi44OH44OrfCBMYXJnZSBMYW5ndWFnZSBNb2RlbCB8IExMTQ==">大規模言語モデル</a>でもCross-Entropy損失が標準。次の<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#44OI44O844Kv44OzIHwgVG9rZW4=">トークン</a>の予測は、大規模な<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/nlp.md#6Kqe5b2ZIHwgVm9jYWJ1bGFyeQ==">語彙</a>の中から1つを選ぶ<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5YiG6aGeIHwgQ2xhc3NpZmljYXRpb24=">分類</a>タスクなので。
+  1. **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5Zue5biwIHwgUmVncmVzc2lvbg==">回帰</a>タスク**: MSE (平均二乗誤差)、MAE (平均絶対誤差)。
+  1. **ランキングや<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5by35YyW5a2m57+SIHwgUmVpbmZvcmNlbWVudCBMZWFybmluZw==">強化学習</a>**: <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#UkxIRiB8IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJvbSBIdW1hbiBGZWVkYmFjaw==">RLHF</a>(e.g. PPO, DPO)では報酬モデルに基づく損失。
 
 ## 教師あり学習 | Supervised Learning<a id="5pWZ5bir44GC44KK5a2m57+SIHwgU3VwZXJ2aXNlZCBMZWFybmluZw=="></a>
 
@@ -219,9 +228,43 @@ $$
 
 - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/llm-training.md#5LqL5YmN5a2m57+SIHwgUHJlLXRyYWluaW5n">事前学習</a>済みモデルの知識を別タスクに応用する学習パラダイム。<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44OV44Kh44Kk44Oz44OB44Ol44O844OL44Oz44KwIHwgRmluZS10dW5pbmc=">ファインチューニング</a>と併用。
 
+## 交差検証 | Cross-Validation<a id="5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg=="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5qmf5qKw5a2m57+SIHwgTWFjaGluZSBMZWFybmluZw==">機械学習</a>モデル、特に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5pWZ5bir44GC44KK5a2m57+SIHwgU3VwZXJ2aXNlZCBMZWFybmluZw==">教師あり学習</a>において、訓練中に<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>を検出する手法の一つ。
+- 典型的には、学習データを<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>と検証データに分割し、
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>を使って訓練を1<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Ko44Od44OD44KvIHwgRXBvY2g=">エポック</a>~数<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Ko44Od44OD44KvIHwgRXBvY2g=">エポック</a>進めた後(各<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Ko44Od44OD44KvIHwgRXBvY2g=">エポック</a>でTraining lossを算出する)、
+  - 検証データを使ってValidation lossを算出する。
+  - Training lossは順当に低下し続けるもののValidation lossが上昇に転じた時点で<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>と判断する。
+- なお、検証データを使ってValidation lossを算出するのを何<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Ko44Od44OD44KvIHwgRXBvY2g=">エポック</a>に一回にするか？は訓練ループの設定パラメータ。
+
 ## 過学習 | Overfitting<a id="6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc="></a>
 
-- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e06Kqk5beuIHwgVHJhaW5pbmcgRXJyb3I=">訓練誤差</a>が小さいが<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5rGO5YyW6Kqk5beuIHwgR2VuZXJhbGl6YXRpb24gRXJyb3I=">汎化誤差</a>が大きい状態。正則化やデータ拡張で緩和可能。
+- モデルが**<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>に過剰に適合**しすぎてしまい、未知のデータ（検証・テストデータ）に対する<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rGO5YyW5oCn6IO9IHwgR2VuZXJhbGl6YXRpb24gUGVyZm9ybWFuY2U=">汎化性能</a>が低下する現象。
+- 実践的には、学習が進むにつれTraining lossは順当に低下しているものの、Validation lossが増加に転じる現象を言う。
+
+* **対策**:
+  - 学習データがモデルのパラメータに対し少なすぎる
+  - 学習データにノイズが多い(=学習に適さないデータがある分実質的な学習データが減る)
+  - 学習データに<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#44OQ44Kk44Ki44K5IHwgQmlhcw==">バイアス</a>がある(=Training dataとValidation dataが乖離している)
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#RHJvcG91dCB8IOODieODreODg+ODl+OCouOCpuODiA==">Dropout</a>
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">Weight</a> Decay
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#RGF0YSBBdWdtZW50YXRpb24=">Data Augmentation</a>
+  - <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#RWFybHkgU3RvcHBpbmcgfCDml6nmnJ/ntYLkuoY=">Early Stopping</a>
+
+## 汎化性能 | Generalization Performance<a id="5rGO5YyW5oCn6IO9IHwgR2VuZXJhbGl6YXRpb24gUGVyZm9ybWFuY2U="></a>
+
+- 学習済みモデルが**<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>以外の未知データ**に対しても適切に予測できる能力のこと。
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#5qmf5qKw5a2m57+SIHwgTWFjaGluZSBMZWFybmluZw==">機械学習</a>の最終目標は「<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e044OH44O844K/IHwgVHJhaW5pbmcgRGF0YQ==">訓練データ</a>への適合」ではなく「未知データへの予測精度の最大化」であり、この性質を **汎化 (Generalization)** と呼ぶ。
+
+## Early Stopping | 早期終了<a id="RWFybHkgU3RvcHBpbmcgfCDml6nmnJ/ntYLkuoY="></a>
+
+- <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルの訓練で**<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>が始まった時点で訓練を打ち切る**手法。
+  - 典型的には、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rex5bGk5a2m57+SIHwgRGVlcCBMZWFybmluZw==">深層学習</a>モデルの訓練を進めていくと、
+    - **<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/ai-general.md#6KiT57e06Kqk5beuIHwgVHJhaW5pbmcgRXJyb3I=">訓練誤差</a> (Training Loss)** は一貫して低下する。
+    - **検証誤差 (Validation Loss)** はある点を境に上昇し始める（<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>）。
+- 実践的には、Validation lossが改善しなくった時点で訓練を打ち切れば良い。
+  - **Patience パラメータ**: 検証誤差が改善しない状態が *N* <a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#44Ko44Od44OD44KvIHwgRXBvY2g=">エポック</a>続いたら訓練を打ち切る。
+  - **チェックポイント保存**: 検証誤差を評価する度に訓練途中のモデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重み</a>を保存しておき、最後に検証誤差が最小だったモデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#6YeN44G/IHwg6YeN44G/44OR44Op44Oh44O844K/IHwgV2VpZ2h0IHwgV2VpZ2h0IFBhcmFtZXRlcg==">重み</a>を採用する。
 
 ## 音声認識 | Automatic Speech Recognition | ASR<a id="6Z+z5aOw6KqN6K2YIHwgQXV0b21hdGljIFNwZWVjaCBSZWNvZ25pdGlvbiB8IEFTUg=="></a>
 

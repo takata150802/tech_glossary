@@ -11,7 +11,7 @@
 
 ## 交差検証 | Cross-Validation<a id="5Lqk5beu5qSc6Ki8IHwgQ3Jvc3MtVmFsaWRhdGlvbg=="></a>
 
-- データセットを複数の部分に分割してモデルを評価する手法であり、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>を防ぎ、モデルの汎化性能を評価するのに役立ちます。
+- データセットを複数の部分に分割してモデルを評価する手法であり、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>を防ぎ、モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rGO5YyW5oCn6IO9IHwgR2VuZXJhbGl6YXRpb24gUGVyZm9ybWFuY2U=">汎化性能</a>を評価するのに役立ちます。
 
 ## 損失関数 | Loss Function<a id="5pCN5aSx6Zai5pWwIHwgTG9zcyBGdW5jdGlvbg=="></a>
 
@@ -35,7 +35,7 @@
 
 ## ドロップアウト | Dropout<a id="44OJ44Ot44OD44OX44Ki44Km44OIIHwgRHJvcG91dA=="></a>
 
-- トレーニング中にランダムに一部のノードを無効化することで、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>を防ぎ、モデルの汎化性能を向上させる正則化手法です。
+- トレーニング中にランダムに一部のノードを無効化することで、<a href="https://github.com/takata150802/tech_glossary/blob/main/output/dl-train_eval.md#6YGO5a2m57+SIHwgT3ZlcmZpdHRpbmc=">過学習</a>を防ぎ、モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rGO5YyW5oCn6IO9IHwgR2VuZXJhbGl6YXRpb24gUGVyZm9ybWFuY2U=">汎化性能</a>を向上させる正則化手法です。
 
 ## 活性化関数 | Activation Function<a id="5rS75oCn5YyW6Zai5pWwIHwgQWN0aXZhdGlvbiBGdW5jdGlvbg=="></a>
 
@@ -43,7 +43,7 @@
 
 ## Data Augmentation<a id="RGF0YSBBdWdtZW50YXRpb24="></a>
 
-- 既存のデータにランダムな変換（回転、ズーム、反転など）を加えることで、データセットを人工的に拡張し、モデルの汎化性能を向上させる手法です。
+- 既存のデータにランダムな変換（回転、ズーム、反転など）を加えることで、データセットを人工的に拡張し、モデルの<a href="https://github.com/takata150802/tech_glossary/blob/main/output/ai/deep-learning.md#5rGO5YyW5oCn6IO9IHwgR2VuZXJhbGl6YXRpb24gUGVyZm9ybWFuY2U=">汎化性能</a>を向上させる手法です。
 
 ## バッチサイズ | Batch Size<a id="44OQ44OD44OB44K144Kk44K6IHwgQmF0Y2ggU2l6ZQ=="></a>
 
